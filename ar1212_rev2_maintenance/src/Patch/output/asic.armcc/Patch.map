@@ -1,0 +1,1540 @@
+Component: ARM Compiler 5.06 update 5 (build 528) Tool: armlink [4d35e2]
+
+==============================================================================
+
+Loading Objects.
+
+Loading object PatchTable.o.
+              definition:  __asm___12_PatchTable_c_b820f3ae____REV16
+              definition:  __asm___12_PatchTable_c_b820f3ae____REVSH
+              definition:  patchComparatorTable
+              definition:  patchPatchedFunctionTable
+Loading object PatchLoader.o.
+              definition:  __asm___13_PatchLoader_c_6f536266____REV16
+              definition:  __asm___13_PatchLoader_c_6f536266____REVSH
+              definition:  PatchLoader
+              definition:  __ARM_use_no_argv
+              definition:  __Vectors
+              definition:  _printf_flags
+              definition:  _printf_return_value
+              definition:  _printf_sizespec
+              definition:  _printf_widthprec
+              definition:  __Vectors_End
+              definition:  __Vectors_Size
+              definition:  __main
+              definition:  __scatterload
+              definition:  __scatterload_rt2
+              definition:  __scatterload_rt2_thumb_only
+              definition:  __scatterload_null
+              definition:  __scatterload_copy
+              definition:  __scatterload_zeroinit
+              definition:  _printf_percent
+              definition:  _printf_d
+              definition:  _printf_u
+              definition:  _printf_x
+              definition:  _printf_s
+              definition:  _printf_percent_end
+              definition:  __rt_lib_init
+              definition:  __rt_lib_init_fp_1
+              definition:  __rt_lib_init_heap_2
+              definition:  __rt_lib_init_preinit_1
+              definition:  __rt_lib_init_heap_1
+              definition:  __rt_lib_init_rand_2
+              definition:  __rt_lib_init_user_alloc_1
+              definition:  __rt_lib_init_atexit_1
+              definition:  __rt_lib_init_clock_1
+              definition:  __rt_lib_init_fp_trap_1
+              definition:  __rt_lib_init_getenv_1
+              definition:  __rt_lib_init_lc_collate_1
+              definition:  __rt_lib_init_lc_ctype_1
+              definition:  __rt_lib_init_lc_monetary_1
+              definition:  __rt_lib_init_lc_numeric_1
+              definition:  __rt_lib_init_lc_time_1
+              definition:  __rt_lib_init_rand_1
+              definition:  __rt_lib_init_signal_1
+              definition:  __rt_lib_init_stdio_2
+              definition:  __rt_lib_init_alloca_1
+              definition:  __rt_lib_init_argv_1
+              definition:  __rt_lib_init_cpp_1
+              definition:  __rt_lib_init_exceptions_1
+              definition:  __rt_lib_init_return
+              definition:  __rt_lib_init_stdio_1
+              definition:  __rt_lib_shutdown
+              definition:  __rt_lib_shutdown_cpp_1
+              definition:  __rt_lib_shutdown_stdio_2
+              definition:  __rt_lib_shutdown_fp_trap_1
+              definition:  __rt_lib_shutdown_heap_1
+              definition:  __rt_lib_shutdown_return
+              definition:  __rt_lib_shutdown_signal_1
+              definition:  __rt_lib_shutdown_stdio_1
+              definition:  __rt_lib_shutdown_user_alloc_1
+              definition:  __rt_entry
+              definition:  __rt_entry_presh_1
+              definition:  __rt_entry_sh
+              definition:  __rt_entry_li
+              definition:  __rt_entry_postsh_1
+              definition:  __rt_entry_main
+              definition:  __rt_entry_postli_1
+              definition:  __rt_exit
+              definition:  __rt_exit_ls
+              definition:  __rt_exit_prels_1
+              definition:  __rt_exit_exit
+              definition:  rand
+              definition:  __aeabi_memcpy4
+              definition:  __aeabi_memcpy8
+              definition:  __asm___10_AssetMgr_c_85ad4e7b____REV16
+              definition:  _maybe_terminate_alloc
+              definition:  __asm___18_AssetMgrInternal_c_33db1b71____REV16
+              definition:  __asm___12_CommandDrv_c_d146f5ff____REV16
+              definition:  __asm___16_CommandHandler_c_2faa6ddc____REV16
+              definition:  __asm___8_cc_hal_c_ef69ac8c____REV16
+              definition:  __asm___11_CryptoMgr_c_b5983e3f____REV16
+              definition:  __asm___19_CryptoMgrInternal_c_600742c5____REV16
+              definition:  __asm___15_HealthMonitor_c_5a5fb43e____REV16
+              definition:  __asm___23_HealthMonitorInternal_c_b8fa6d43____REV16
+              definition:  __asm___12_Interrupts_c_817c97de____REV16
+              definition:  __asm___14_LifecycleMgr_c_83de3f87____REV16
+              definition:  __asm___22_LifecycleMgrInternal_c_46da2928____REV16
+              definition:  __asm___8_MacDrv_c_042751d7____REV16
+              definition:  __asm___8_NvmMgr_c_99bd7f0e____REV16
+              definition:  __asm___16_NvmMgrInternal_c_2de1adad____REV16
+              definition:  __asm___9_OtpmDrv_c_ade67301____REV16
+              definition:  __asm___17_OtpmDrvInternal_c_2fd1612d____REV16
+              definition:  __asm___18_PatchMgrInternal_c_fde36b4f____REV16
+              definition:  __asm___22_PatchMgrPatchSupport_c_8bb93a07____REV16
+              definition:  __asm___10_Platform_c_ab3f0215____REV16
+              definition:  __asm___11_SystemDrv_c_0091ba50____REV16
+              definition:  __asm___11_SystemMgr_c_3392ca6b____REV16
+              definition:  __asm___19_SystemMgrInternal_c_1b3f4977____REV16
+              definition:  __asm___13_WatchdogDrv_c_5ac96643____REV16
+              definition:  __asm___12_InitSystem_c_bd24e49c____REV16
+              definition:  __asm___16_InitRamVectors_c_edb6d72a____REV16
+              definition:  __asm___9_InitMpu_c_2e0cae1d____REV16
+              definition:  __asm___30_InitHardFaultHandlerExtended_c_5b98589b____REV16
+              definition:  __asm___19_InitPendSvHandler_c_da299649____REV16
+              definition:  __asm___23_InitHardFaultShutdown_c_1762254e____REV16
+              definition:  __asm___23_InitUnexpectedHandler_c_7998e74d____REV16
+              definition:  __asm___10_AssetMgr_c_85ad4e7b____REVSH
+              definition:  __asm___18_AssetMgrInternal_c_33db1b71____REVSH
+              definition:  __asm___12_CommandDrv_c_d146f5ff____REVSH
+              definition:  __asm___16_CommandHandler_c_2faa6ddc____REVSH
+              definition:  __asm___8_cc_hal_c_ef69ac8c____REVSH
+              definition:  __asm___11_CryptoMgr_c_b5983e3f____REVSH
+              definition:  __asm___19_CryptoMgrInternal_c_600742c5____REVSH
+              definition:  __asm___15_HealthMonitor_c_5a5fb43e____REVSH
+              definition:  __asm___23_HealthMonitorInternal_c_b8fa6d43____REVSH
+              definition:  __asm___12_Interrupts_c_817c97de____REVSH
+              definition:  __asm___14_LifecycleMgr_c_83de3f87____REVSH
+              definition:  __asm___22_LifecycleMgrInternal_c_46da2928____REVSH
+              definition:  __asm___8_MacDrv_c_042751d7____REVSH
+              definition:  __asm___8_NvmMgr_c_99bd7f0e____REVSH
+              definition:  __asm___16_NvmMgrInternal_c_2de1adad____REVSH
+              definition:  __asm___9_OtpmDrv_c_ade67301____REVSH
+              definition:  __asm___17_OtpmDrvInternal_c_2fd1612d____REVSH
+              definition:  __asm___18_PatchMgrInternal_c_fde36b4f____REVSH
+              definition:  __asm___22_PatchMgrPatchSupport_c_8bb93a07____REVSH
+              definition:  __asm___10_Platform_c_ab3f0215____REVSH
+              definition:  __asm___11_SystemDrv_c_0091ba50____REVSH
+              definition:  __asm___11_SystemMgr_c_3392ca6b____REVSH
+              definition:  __asm___19_SystemMgrInternal_c_1b3f4977____REVSH
+              definition:  __asm___13_WatchdogDrv_c_5ac96643____REVSH
+              definition:  __asm___12_InitSystem_c_bd24e49c____REVSH
+              definition:  __asm___16_InitRamVectors_c_edb6d72a____REVSH
+              definition:  __asm___9_InitMpu_c_2e0cae1d____REVSH
+              definition:  __asm___30_InitHardFaultHandlerExtended_c_5b98589b____REVSH
+              definition:  __asm___19_InitPendSvHandler_c_da299649____REVSH
+              definition:  __asm___23_InitHardFaultShutdown_c_1762254e____REVSH
+              definition:  __asm___23_InitUnexpectedHandler_c_7998e74d____REVSH
+              definition:  SVC_Handler
+              definition:  SystemDrvWaitForInterrupt
+              definition:  SystemDrvGetInfo
+              definition:  SystemDrvTerminate
+              definition:  InitStart
+              definition:  __user_setup_stackheap
+              definition:  HardFault_Handler
+              definition:  AssetMgrOnPhaseEntry
+              definition:  AssetMgrOnProvisionAsset
+              definition:  AssetMgrGetPublicKeyReference
+              definition:  AssetMgrRetrieveCertificate
+              definition:  AssetMgrRetrievePrivateKey
+              definition:  AssetMgrRetrieveCC312TrngChar
+              definition:  AssetMgrRetrievePskMasterSecret
+              definition:  AssetMgrRetrieveOtpmConfig
+              definition:  AssetMgrGetCertificatePurpose
+              definition:  AssetMgrGetCertificateAuthId
+              definition:  AssetMgrGetCertificateVersion
+              definition:  AssetMgrGetCertificateNumber
+              definition:  AssetMgrGetCertFlagsFromPubCert
+              definition:  AssetMgrGetCertAuthIdFromPrivateKey
+              definition:  AssetMgrRetrieveLatestAsset
+              definition:  AssetMgrCompareVersionWithOtpm
+              definition:  AssetMgrCompareAssetWithOtpm
+              definition:  AssetMgrGetPublicKeySize
+              definition:  AssetMgrGetPrivateKeySize
+              definition:  AssetMgrCheckCurrentLcsForProvisioning
+              definition:  CommandDrvInit
+              definition:  CommandDrvGetCommand
+              definition:  CommandDrvGetCommandParams
+              definition:  CommandDrvSetResponse
+              definition:  CommandDrvIsCommandInProgress
+              definition:  Doorbell_IrqHandler
+              definition:  IcoreEccDed_IrqHandler
+              definition:  CommandHandlerOnPhaseEntry
+              definition:  CommandHandlerOnDoorbellEvent
+              definition:  CommandHandlerFatalErrorStop
+              definition:  CommandHandlerIsHostCommandInProgress
+              definition:  CommandHandlerAddCommand
+              definition:  CC_HalInit
+              definition:  CC_HalTerminate
+              definition:  CC_HalClearInterruptBit
+              definition:  CC_HalMaskInterrupt
+              definition:  CC_HalWaitInterrupt
+              definition:  CC_HalWaitInterruptRND
+              definition:  CC_PalInit
+              definition:  CC_PalTerminate
+              definition:  CC_PalMutexLock
+              definition:  CC_PalMutexUnlock
+              definition:  CC_PalPowerSaveModeInit
+              definition:  CC_PalPowerSaveModeStatus
+              definition:  CC_PalPowerSaveModeSelect
+              definition:  CC_PalInitIrq
+              definition:  CC_PalFinishIrq
+              definition:  CC_PalWaitInterrupt
+              definition:  CC_PalSecMemCmp
+              definition:  CC_PalMemCmpPlat
+              definition:  CC_PalMemCopyPlat
+              definition:  CC_PalMemMovePlat
+              definition:  CC_PalMemSetPlat
+              definition:  CC_PalMemSetZeroPlat
+              definition:  CC_PalMemMallocPlat
+              definition:  CC_PalMemReallocPlat
+              definition:  CC_PalMemFreePlat
+              definition:  CC_PalDataBufferAttrGet
+              definition:  CC_PalAbort
+              definition:  CC_PalTrngParamSet
+              definition:  CC_PalTrngParamGet
+              definition:  CC_PalApbcCntrInit
+              definition:  CC_PalApbcCntrValue
+              definition:  CC_PalApbcModeSelect
+              definition:  CC_BsvErrorConversion
+              definition:  CC_BsvOTPWordRead
+              definition:  CC_BsvOTPWordWrite
+              definition:  CryptoMgrOnGetSensorId
+              definition:  CryptoMgrOnPhaseEntry
+              definition:  CryptoMgrOnSelfTest
+              definition:  CryptoMgrOnPalAbort
+              definition:  CryptoMgrAuthenticatePatchChunk
+              definition:  CryptoMgrAuthenticateAsset
+              definition:  CryptoMgrRsaDecrypt
+              definition:  CryptoMgrAeadDecrypt
+              definition:  CryptoMgrDeriveKeys
+              definition:  CryptoMgrGenRandomNumber
+              definition:  CryptoMgrGetSymmetricKeySizeBytes
+              definition:  CryptoMgrGetSensorIdCalled
+              definition:  CryptoMgrReportBsvError
+              definition:  CryptoMgrReportMbedTlsError
+              definition:  CryptoMgrOnConfigEntry
+              definition:  CryptoMgrCheckStatus
+              definition:  CryptoMgrOnShutdownEntry
+              definition:  CryptoMgrGetSensorId
+              definition:  CryptoMgrIncrementNumber
+              definition:  DiagOnWaitPaused
+              definition:  DiagInit
+              definition:  DiagSetCheckpoint
+              definition:  DiagEnableInfo
+              definition:  DiagSetCheckpointWithInfo
+              definition:  DiagSetCheckpointWithInfoUnprotected
+              definition:  DiagOnFatalError
+              definition:  DiagRegisterFatalErrorDumpHandler
+              definition:  Watchdog_IrqHandler
+              definition:  HealthMonitorOnClockChange
+              definition:  HealthMonitorOnPhaseEntry
+              definition:  HealthMonitorOnWatchdogEvent
+              definition:  HealthMonitorOnEnableMonitoring
+              definition:  HealthMonitorOnGetStatus
+              definition:  HealthMonitorSetWdogTimerInterval
+              definition:  HealthMonitorSetStackCheckThreshold
+              definition:  HealthMonitorGetStackUsedSizeLongWords
+              definition:  HealthMonitorGetVCoreStatus
+              definition:  HealthMonitorStartWatchdog
+              definition:  InterruptsInit
+              definition:  InterruptsEnableAll
+              definition:  InterruptsDisableAll
+              definition:  InterruptsEnableInterrupt
+              definition:  InterruptsIsInterruptPending
+              definition:  InterruptsClearInterruptPending
+              definition:  InterruptsSetInterruptPriority
+              definition:  InterruptsSetExceptionPriority
+              definition:  LifecycleMgrGetCurrentLcs
+              definition:  LifecycleMgrOnApplyDebugEntitlement
+              definition:  LifecycleMgrOnAuthorizeRMA
+              definition:  LifecycleMgrOnPhaseEntry
+              definition:  LifecycleMgrIsOtpmBad
+              definition:  LifecycleMgrSwFatalError
+              definition:  LifecycleMgrHwFatalError
+              definition:  LifecycleMgrOnDiagFatalErrorDump
+              definition:  LifecycleMgrInit
+              definition:  LifecycleMgrCc312Init
+              definition:  LifecycleMgrGetInfoEnable
+              definition:  MacDrvResetToIdle
+              definition:  MacDrvInit
+              definition:  MacDrvSetSessionKey
+              definition:  MacDrvResetIv
+              definition:  MacDrvSetGmacIv
+              definition:  MacDrvSetConfig
+              definition:  MacDrvSetRoiConfig
+              definition:  MacDrvStartAuthentication
+              definition:  MacDrvGetCmacStatus
+              definition:  NvmMgrOnPhaseEntry
+              definition:  NvmMgrFindFirst
+              definition:  NvmMgrFindNext
+              definition:  NvmMgrReadAsset
+              definition:  NvmMgrWriteAsset
+              definition:  NvmMgrGetFreeSpaceAddress
+              definition:  NvmMgrOnClockChange
+              definition:  NvmMgrOnDiagFatalErrorDump
+              definition:  NvmMgrInit
+              definition:  NvmMgrFindAsset
+              definition:  NvmMgrFindFreeSpace
+              definition:  OtpmDrvInit
+              definition:  OtpmDrvConfigure
+              definition:  OtpmDrvGetArraySizeLongWords
+              definition:  OtpmDrvRead
+              definition:  OtpmDrvWrite
+              definition:  OtpmDrvGetLastError
+              definition:  OtpmDrvIsHardwareFault
+              definition:  OtpmDrvGetUserSpaceAddress
+              definition:  OtpmDrvClockCycles
+              definition:  OtpmDrvGetRegisterBankSizeLongWords
+              definition:  OtpmDrvRegisterWrite
+              definition:  PatchMgrOnLoadPatchChunk
+              definition:  PatchMgrOnPhaseEntry
+              definition:  PatchMgrGetPatchVersion
+              definition:  PatchMgrOnDiagFatalErrorDump
+              definition:  PatchMgrInit
+              definition:  PatchMgrProcessChunk
+              definition:  PatchMgrHandleCommand
+              definition:  PatchMgrSetupComparator
+              definition:  PatchMgrDisableComparator
+              definition:  PatchMgrSetupComparatorAndPatchedTable
+              definition:  PatchMgrSetupComparatorTable
+              definition:  PlatformInitDrivers
+              definition:  PlatformEnterCritical
+              definition:  PlatformInit
+              definition:  PlatformExitCritical
+              definition:  SessionMgrOnPhaseEntry
+              definition:  SessionMgrOnGetCertificates
+              definition:  SessionMgrOnSetEphemeralMasterSecret
+              definition:  SessionMgrOnSetPskSessionKeys
+              definition:  SessionMgrOnSetSessionKeys
+              definition:  SessionMgrDecryptCommandRequestParams
+              definition:  SessionMgrOnSetVideoAuthROI
+              definition:  SessionMgrOnDiagFatalErrorDump
+              definition:  SessionMgrValidateSymmetricAuthCipherMode
+              definition:  SessionMgrValidateSymmetricKeyType
+              definition:  SessionMgrValidateSymmetricAECipherMode
+              definition:  SessionMgrInitSessionParams
+              definition:  SessionMgrValidateSessionParams
+              definition:  SessionMgrConfigMacDriver
+              definition:  SessionMgrConfigRoi
+              definition:  SessionMgrConfigVideoAuth
+              definition:  SessionMgrSetupSession
+              definition:  SessionMgrSetupPskSession
+              definition:  SessionMgrDecryptMasterSecret
+              definition:  SessionMgrValidateRsaSessionParams
+              definition:  SessionMgrSetupRsaSession
+              definition:  SessionMgrInitiatePskSession
+              definition:  SessionMgrInitiateRsaSession
+              definition:  SessionMgrRetrieveSensorCertificate
+              definition:  SessionMgrRetrieveVendorCertificate
+              definition:  SessionMgrRetrieveCertificates
+              definition:  SystemDrvInit
+              definition:  SystemDrvGetCheckpoint
+              definition:  SystemDrvSetCheckpoint
+              definition:  SystemDrvGetPausepoint
+              definition:  SystemDrvSetPaused
+              definition:  SystemDrvIsPaused
+              definition:  SystemDrvGetBootOptionFlags
+              definition:  SystemDrvSetInfo
+              definition:  SystemDrvSetCryptoError
+              definition:  SystemDrvEnableClock
+              definition:  SystemDrvEnableCpuWait
+              definition:  SystemDrvEnableI2cWriteCrcReset
+              definition:  SystemDrvIsPllLocked
+              definition:  SystemMgrIsEventPending
+              definition:  SystemMgrReportCryptoFault
+              definition:  SystemMgrReportFatalError
+              definition:  SystemMgrSetEvent
+              definition:  SystemMgrInit
+              definition:  SystemMgrMainLoop
+              definition:  SystemMgrClearPendingEvent
+              definition:  SystemMgrRequestShutdown
+              definition:  SystemMgrGetCurrentPhase
+              definition:  SystemMgrGetRomVersion
+              definition:  SystemMgrEnablePatchRegion
+              definition:  SystemMgrSetClockSpeed
+              definition:  SystemMgrGetClockSpeed
+              definition:  SystemMgrRegisterClockSpeedChangeNotifier
+              definition:  SystemMgrHasCC312AbortOccurred
+              definition:  SystemMgrInitExceptionAndInterruptPriorities
+              definition:  SystemMgrNotifyEnterPhase
+              definition:  SystemMgrOnUnhandledEvent
+              definition:  SystemMgrOnCc312Abort
+              definition:  SystemMgrFatalErrorStop
+              definition:  SystemMgrOnFatalErrorEvent
+              definition:  SystemMgrOnShutdownPendingEvent
+              definition:  SystemMgrOnDoorbellEvent
+              definition:  SystemMgrHandleEvent
+              definition:  SystemMgrGetNextEvent
+              definition:  SystemMgrOnDiagFatalErrorDump
+              definition:  WatchdogDrvInit
+              definition:  WatchdogDrvStart
+              definition:  WatchdogDrvClearInterrupt
+              definition:  WatchdogDrvDisable
+              definition:  ToolboxCalcChecksum
+              definition:  main
+              definition:  InitSystem
+              definition:  _ttywrch
+              definition:  _sys_exit
+              definition:  _sys_open
+              definition:  InitRelocateVectorTable
+              definition:  InitInstallNewIrqHandler
+              definition:  InitMpu
+              definition:  InitMpuEnablePatchRegion
+              definition:  InitMpuGetStackInformation
+              definition:  InitHardFaultHandler
+              definition:  PendSV_Handler
+              definition:  InitHardFaultShutdown
+              definition:  UnexpectedHandler
+              definition:  NMI_Handler
+              definition:  Reserved_Handler
+              definition:  SysTick_Handler
+              definition:  SOF_IrqHandler
+              definition:  EOF_IrqHandler
+              definition:  SOL_IrqHandler
+              definition:  EOL_IrqHandler
+              definition:  CCIsIdle_IrqHandler
+              definition:  CCPowerdownReady_IrqHandler
+              definition:  CCHostIntReq_IrqHandler
+              definition:  PllLocked_IrqHandler
+              definition:  PllNotLocked_IrqHandler
+              definition:  IcoreEccSec_IrqHandler
+              definition:  Reserved12_IrqHandler
+              definition:  DualTimerInt1_IrqHandler
+              definition:  DualTimerInt2_IrqHandler
+              definition:  DualTimerIntC_IrqHandler
+              definition:  CyberRomDed_IrqHandler
+              definition:  CyberRomSec_IrqHandler
+              definition:  CyberRamDed_IrqHandler
+              definition:  CyberRamSec_IrqHandler
+              definition:  Reserved21_IrqHandler
+              definition:  Reserved22_IrqHandler
+              definition:  Reserved23_IrqHandler
+              definition:  Reserved24_IrqHandler
+              definition:  Reserved25_IrqHandler
+              definition:  Reserved26_IrqHandler
+              definition:  Reserved27_IrqHandler
+              definition:  Reserved28_IrqHandler
+              definition:  Reserved29_IrqHandler
+              definition:  Reserved30_IrqHandler
+              definition:  Reserved31_IrqHandler
+              definition:  CC_BsvInit
+              definition:  CC_BsvLcsGet
+              definition:  CC_BsvOTPPrivateKeysErase
+              definition:  CC_BsvLcsGetAndInit
+              definition:  CC_BsvFatalErrorSet
+              definition:  CC_BsvRMAModeEnable
+              definition:  CC_BsvSocIDCompute
+              definition:  CC_BsvICVKeyLock
+              definition:  CC_BsvICVRMAFlagBitLock
+              definition:  CC_BsvCoreClkGatingEnable
+              definition:  CC_BsvSecModeSet
+              definition:  CC_BsvPrivModeSet
+              definition:  CC_BsvIcvAssetProvisioningOpen
+              definition:  CC_BsvPubKeyHashGet
+              definition:  CC_BsvSwVersionGet
+              definition:  CC_BsvSwVersionSet
+              definition:  BsvAes
+              definition:  BsvCryptoImageInit
+              definition:  BsvCryptoImageUpdate
+              definition:  BsvCryptoImageFinish
+              definition:  CC_BsvSHA256
+              definition:  CC_BsvKeyDerivation
+              definition:  CC_BsvAesCcm
+              definition:  InitHash
+              definition:  FreeHash
+              definition:  ProcessHash
+              definition:  FinishHash
+              definition:  InitAes
+              definition:  FreeAes
+              definition:  ProcessAes
+              definition:  FinishAes
+              definition:  LoadAesCcmIvState
+              definition:  LoadAesCcmCtrState
+              definition:  StoreAesCcmIvState
+              definition:  StoreAesCcmCtrState
+              definition:  ProcessAesCcm
+              definition:  FinishAesCcm
+              definition:  SB_HalClearInterruptBit
+              definition:  SB_HalWaitInterrupt
+              definition:  SB_HalMaskInterrupt
+              definition:  SB_HalInit
+              definition:  UTIL_ReverseWordsBuff
+              definition:  UTIL_ReverseBuff
+              definition:  UTIL_MemCopy
+              definition:  UTIL_ReverseMemCopy
+              definition:  UTIL_MemSet
+              definition:  UTIL_MemCmp
+              definition:  CC_BsvSecureDebugSet
+              definition:  CCCertSecDbgParse
+              definition:  CCCommonCertVerify
+              definition:  CCCommonKeyCertVerify
+              definition:  CCCommonContentCertVerify
+              definition:  CCCertFieldsParse
+              definition:  CC_SbCertChainVerificationInit
+              definition:  CC_SbCertVerifySingle
+              definition:  CC_SbCertVerifyOnly
+              definition:  CCCertValidateSWComps
+              definition:  CCCertLoadCertificate
+              definition:  NVM_GetLCS
+              definition:  NVM_ReadHASHPubKey
+              definition:  NVM_GetSwVersion
+              definition:  NVM_SetSwVersion
+              definition:  CCSbCalcPublicKeyHASH
+              definition:  CCSbCalcPublicKeyHASHAndCompare
+              definition:  CCSbVerifySignature
+              definition:  CCSbImageLoadAndVerify
+              definition:  CCSbSetNvCounter
+              definition:  CCSbVerifyNvCounter
+              definition:  RSA_PSS_Decode
+              definition:  RSA_PSS_Verify
+              definition:  RSA_CalcExponent
+              definition:  RSA_PKA_SetRegsSizesTab
+              definition:  RSA_PKA_SetRegsMapTab
+              definition:  RSA_PKA_InitPka
+              definition:  RSA_HW_PKI_PKA_FinishPKA
+              definition:  _RSA_PKA_ExecOperation
+              definition:  RSA_HW_PKI_PKA_CopyDataIntoPkaReg
+              definition:  RSA_HW_PKI_PKA_CopyDataFromPkaReg
+              definition:  RSA_CalcNp
+              definition:  RSA_HW_PKA_CalcNpIntoPkaReg
+              definition:  CC_LibInit
+              definition:  CC_LibFini
+              definition:  __cyg_profile_func_enter
+              definition:  __cyg_profile_func_exit
+              definition:  ProcessBypass
+              definition:  ProcessAesDrv
+              definition:  FinishAesDrv
+              definition:  ProcessAesCcmDrv
+              definition:  loadAesGcmGhashSubkey
+              definition:  loadAesGcmKey
+              definition:  inc32AesGcmJ0
+              definition:  loadAesGcmCntr
+              definition:  storeAesGcmCntr
+              definition:  loadAesGcmGhashIV
+              definition:  storeAesGcmGhashIV
+              definition:  initAesGcm
+              definition:  ProcessAesGcm
+              definition:  SetDataBuffersInfo
+              definition:  AesKeyWrapInputCheck
+              definition:  mbedtls_aes_key_wrap
+              definition:  mbedtls_aes_key_unwrap
+              definition:  mbedtls_sha512_t_init
+              definition:  mbedtls_sha512_t_free
+              definition:  mbedtls_sha512_t_starts
+              definition:  mbedtls_sha512_t_process
+              definition:  mbedtls_sha512_t_update
+              definition:  mbedtls_sha512_t_finish
+              definition:  mbedtls_sha512_t
+              definition:  mbedtls_sha1_init
+              definition:  mbedtls_sha1_free
+              definition:  mbedtls_sha1_clone
+              definition:  mbedtls_sha1_starts_ret
+              definition:  mbedtls_internal_sha1_process
+              definition:  mbedtls_sha1_update_ret
+              definition:  mbedtls_sha1_finish_ret
+              definition:  mbedtls_sha256_init
+              definition:  mbedtls_sha256_free
+              definition:  mbedtls_sha256_clone
+              definition:  mbedtls_sha256_starts_ret
+              definition:  mbedtls_internal_sha256_process
+              definition:  mbedtls_sha256_update_ret
+              definition:  mbedtls_sha256_finish_ret
+              definition:  mbedtls_sha_process_internal
+              definition:  mbedtls_sha_starts_internal
+              definition:  mbedtls_sha_finish_internal
+              definition:  mbedtls_sha_update_internal
+              definition:  mbedtls_aes_init
+              definition:  mbedtls_aes_free
+              definition:  mbedtls_aes_setkey_enc
+              definition:  mbedtls_aes_setkey_dec
+              definition:  mbedtls_aes_crypt_ecb
+              definition:  mbedtls_aes_crypt_cbc
+              definition:  mbedtls_aes_crypt_cfb128
+              definition:  mbedtls_aes_crypt_cfb8
+              definition:  mbedtls_aes_crypt_ctr
+              definition:  mbedtls_aes_crypt_ofb
+              definition:  mbedtls_internal_aes_encrypt
+              definition:  mbedtls_aes_encrypt
+              definition:  mbedtls_internal_aes_decrypt
+              definition:  mbedtls_aes_decrypt
+              definition:  mbedtls_zeroize_internal
+              definition:  mbedtls_ccm_init
+              definition:  mbedtls_ccm_setkey
+              definition:  mbedtls_ccm_free
+              definition:  mbedtls_ccm_encrypt_and_tag
+              definition:  mbedtls_ccm_auth_decrypt
+              definition:  mbedtls_gcm_init
+              definition:  mbedtls_gcm_setkey
+              definition:  mbedtls_gcm_free
+              definition:  mbedtls_gcm_crypt_and_tag
+              definition:  mbedtls_gcm_auth_decrypt
+              definition:  mbedtls_gcm_starts
+              definition:  mbedtls_gcm_update
+              definition:  mbedtls_gcm_finish
+              definition:  mbedtls_hardware_poll
+              definition:  mbedtls_ccm_get_security_level
+              definition:  mbedtls_ccm_init_int
+              definition:  mbedtls_ccm_setkey_int
+              definition:  mbedtls_ccm_free_int
+              definition:  mbedtls_ccm_encrypt_and_tag_int
+              definition:  mbedtls_ccm_auth_decrypt_int
+              definition:  mbedtls_ccm_star_init
+              definition:  mbedtls_ccm_star_setkey
+              definition:  mbedtls_ccm_star_free
+              definition:  mbedtls_ccm_star_encrypt_and_tag
+              definition:  mbedtls_ccm_star_auth_decrypt
+              definition:  mbedtls_ccm_star_nonce_generate
+              definition:  mbedtls_rsa_set_padding
+              definition:  mbedtls_rsa_init
+              definition:  mbedtls_rsa_free
+              definition:  mbedtls_rsa_gen_key
+              definition:  mbedtls_rsa_validate_params_alt
+              definition:  mbedtls_rsa_check_pubkey
+              definition:  mbedtls_rsa_check_privkey
+              definition:  mbedtls_rsa_check_pub_priv
+              definition:  mbedtls_rsa_public
+              definition:  mbedtls_rsa_private
+              definition:  mbedtls_rsa_rsaes_oaep_encrypt
+              definition:  mbedtls_rsa_rsaes_pkcs1_v15_encrypt
+              definition:  mbedtls_rsa_pkcs1_encrypt
+              definition:  mbedtls_rsa_rsaes_oaep_decrypt
+              definition:  mbedtls_rsa_rsaes_pkcs1_v15_decrypt
+              definition:  mbedtls_rsa_pkcs1_decrypt
+              definition:  mbedtls_rsa_rsassa_pss_sign
+              definition:  mbedtls_rsa_rsassa_pkcs1_v15_sign
+              definition:  mbedtls_rsa_pkcs1_sign
+              definition:  mbedtls_rsa_rsassa_pss_verify_ext
+              definition:  mbedtls_rsa_rsassa_pss_verify
+              definition:  mbedtls_rsa_rsassa_pkcs1_v15_verify
+              definition:  mbedtls_rsa_pkcs1_verify
+              definition:  mbedtls_rsa_copy
+              definition:  mbedtls_rsa_import
+              definition:  mbedtls_rsa_import_raw
+              definition:  mbedtls_rsa_complete
+              definition:  mbedtls_rsa_export_raw
+              definition:  mbedtls_rsa_export
+              definition:  mbedtls_rsa_export_crt
+              definition:  mbedtls_rsa_get_len
+              definition:  error_mapping_cc_to_mbedtls_ecc
+              definition:  ecp_grp_id_to_domain_id
+              definition:  cc_ecp_mul
+              definition:  cc_ecp_gen_keypair_base
+              definition:  mbedtls_ecdsa_sign
+              definition:  mbedtls_ecdsa_verify
+              definition:  mbedtls_ecdsa_genkey
+              definition:  cc_ecp_gen_keypair
+              definition:  mbedtls_ecdh_gen_public
+              definition:  mbedtls_ecdh_compute_shared
+              definition:  mbedtls_ecdh_make_params_edwards
+              definition:  mbedtls_ecdh_read_params_edwards
+              definition:  mbedtls_ecdsa_genkey_edwards
+              definition:  mbedtls_ecdsa_sign_edwards
+              definition:  mbedtls_ecdsa_verify_edwards
+              definition:  mbedtls_ecdsa_public_key_read_edwards
+              definition:  mbedtls_ecdsa_public_key_write_edwards
+              definition:  mbedtls_cipher_cmac_starts
+              definition:  mbedtls_cipher_cmac_update
+              definition:  mbedtls_cipher_cmac_finish
+              definition:  mbedtls_cipher_cmac_reset
+              definition:  mbedtls_cipher_cmac
+              definition:  mbedtls_aes_cmac_prf_128
+              definition:  mbedtls_dhm_init
+              definition:  mbedtls_dhm_read_params
+              definition:  mbedtls_dhm_make_params
+              definition:  mbedtls_dhm_set_group
+              definition:  mbedtls_dhm_read_public
+              definition:  mbedtls_dhm_make_public
+              definition:  mbedtls_dhm_calc_secret
+              definition:  mbedtls_dhm_free
+              definition:  mbedtls_dhm_parse_dhm
+              definition:  mbedtls_mng_pending_rma_status_get
+              definition:  mbedtls_mng_hw_version_get
+              definition:  mbedtls_mng_cc_sec_mode_set
+              definition:  mbedtls_mng_cc_priv_mode_set
+              definition:  mbedtls_mng_debug_key_set
+              definition:  mbedtls_mng_gen_config_get
+              definition:  mbedtls_mng_oem_key_lock
+              definition:  mbedtls_mng_apbc_config_set
+              definition:  mbedtls_mng_apbc_access
+              definition:  mbedtls_mng_suspend
+              definition:  mbedtls_mng_resume
+              definition:  mbedtls_mng_otpWordRead
+              definition:  mbedtls_mng_lcsGet
+              definition:  mbedtls_mng_swVersionGet
+              definition:  mbedtls_mng_pubKeyHashGet
+              definition:  UtilCmacBuildDataForDerivation
+              definition:  UtilCmacDeriveKey
+              definition:  mbedtls_util_key_derivation
+              definition:  mbedtls_util_asset_pkg_unpack
+              definition:  PkiCalcNp
+              definition:  PkiLongNumDiv
+              definition:  PkiLongNumMul
+              definition:  PkiConditionalSecureSwapUint32
+              definition:  PkiClearAllPka
+              definition:  PkiGetNextTwoMsBits
+              definition:  PkiIsUint8ArrayEqualTo0
+              definition:  PkiAreBuffersEqual
+              definition:  PkaCopyBe8DataIntoPkaReg
+              definition:  PkaCopyDataFromPkaRegToBe8Buff
+              definition:  PkiExecModExpBe
+              definition:  PkiExecModExpLeW
+              definition:  PkaModDivideBy2
+              definition:  PkaGetRegEffectiveSizeInBits
+              definition:  PkaGetNextMsBit
+              definition:  PkaGet2MsBits
+              definition:  PkaSetLenIds
+              definition:  PkaSetRegsSizesTab
+              definition:  PkaInitPka
+              definition:  PkaInitAndMutexLock
+              definition:  PkaFinishPka
+              definition:  PkaClearBlockOfRegs
+              definition:  PkaFinishAndMutexUnlock
+              definition:  PkaCalcNpIntoPkaReg
+              definition:  PkaCopyPkaRegIntoBeByteBuff
+              definition:  PkaCopyDataFromPkaReg
+              definition:  PkaCopyByteBuffIntoPkaReg
+              definition:  PkaCopyBeByteBuffIntoPkaReg
+              definition:  PkaCopyDataIntoPkaReg
+              definition:  PkaClearPkaRegWords
+              definition:  PkaIsRegModEqual
+              definition:  PkaGetBitFromPkaReg
+              definition:  PkaExecFullModInv
+              definition:  CC_KdfKeyDerivFunc
+              definition:  HkdfExtract
+              definition:  HkdfExpand
+              definition:  mbedtls_hkdf_key_derivation
+              definition:  CC_RsaPubKeyBuild
+              definition:  CC_RsaPrivKeyBuild
+              definition:  CC_RsaPrivKeyCrtBuild
+              definition:  CC_RsaPubKeyGet
+              definition:  RsaOaepMGF1
+              definition:  RsaPssOaepEncode
+              definition:  RsaPssOaepDecode
+              definition:  CC_RsaSchemesEncrypt
+              definition:  CC_RsaSchemesDecrypt
+              definition:  RsaGenRndNonZeroVect
+              definition:  RsaEmsaPkcs1v15Encode
+              definition:  CRTS_RSA_VER15_UTIL_foo
+              definition:  RsaPssVerify21
+              definition:  RsaPssSign21
+              definition:  CC_RSA_PSS21_UTIL_foo
+              definition:  CC_RsaPrimEncrypt
+              definition:  CC_RsaPrimDecrypt
+              definition:  CC_RsaVerifyInit
+              definition:  CC_RsaVerifyUpdate
+              definition:  CC_RsaVerifyFinish
+              definition:  CC_RsaVerify
+              definition:  CC_RsaKgKeyPairGenerate
+              definition:  CC_RsaKgKeyPairCrtGenerate
+              definition:  CC_RsaGenerateVectorInRangeX931
+              definition:  CC_RsaSignInit
+              definition:  CC_RsaSignUpdate
+              definition:  CC_RsaSignFinish
+              definition:  CC_RsaSign
+              definition:  RsaInitPubKeyDb
+              definition:  RsaExecPubKeyExp
+              definition:  RsaInitPrivKeyDb
+              definition:  RsaExecPrivKeyExp
+              definition:  RsaCalculateNandD
+              definition:  RsaCalculateCrtParams
+              definition:  RsaPrimeTestCall
+              definition:  RsaGenPandQ
+              definition:  FfcGetHashMode
+              definition:  FfcGetDomainSizes
+              definition:  FfcFips186v4GenerateDomain
+              definition:  CC_FfcGenerateDomainFromSeed
+              definition:  CC_FfcGenerateDomainAndSeed
+              definition:  CC_FfcValidateAndImportDomain
+              definition:  CC_FfcExportDomain
+              definition:  CC_FfcCreateNewGenerator
+              definition:  ProcessChacha
+              definition:  mbedtls_chacha_init
+              definition:  mbedtls_chacha_block
+              definition:  mbedtls_chacha_finish
+              definition:  mbedtls_chacha_free
+              definition:  mbedtls_chacha
+              definition:  mbedtls_chacha_poly
+              definition:  mbedtls_poly
+              definition:  PolyMacCalc
+              definition:  CC_EcpkiPublKeyBuildAndCheck
+              definition:  CC_EcpkiPubKeyExport
+              definition:  CC_EcpkiPrivKeyBuild
+              definition:  EcdsaVerifyInit
+              definition:  EcdsaVerifyUpdate
+              definition:  EcdsaVerifyFinish
+              definition:  CC_EcdsaVerify
+              definition:  EcdsaSignInit
+              definition:  EcdsaSignUpdate
+              definition:  EcdsaSignFinishInt
+              definition:  CC_EcdsaSign
+              definition:  CC_EcpkiKeyPairGenerateBase
+              definition:  CC_EcpkiKeyPairGenerate
+              definition:  CC_EcdhSvdpDh
+              definition:  mbedtls_ecies_kem_encrypt_full
+              definition:  mbedtls_ecies_kem_decrypt
+              definition:  EcWrstGenKeyPairBase
+              definition:  EcWrstGenKeyPair
+              definition:  PkiCalcJacobiSymbol
+              definition:  PkiIsModSquareRootExists
+              definition:  PkaDoubleMdf2Mdf
+              definition:  PkaDoubleMdf2Jcb
+              definition:  PkaAddJcbAfn2Mdf
+              definition:  PkaJcb2Afn
+              definition:  PkaAddAff
+              definition:  PkaSum2ScalarMullt
+              definition:  PkaEcdsaVerify
+              definition:  EcWrstInitPubKey
+              definition:  EcWrstFullCheckPublKey
+              definition:  EcWrstDhDeriveSharedSecret
+              definition:  EcWrstDsaTruncateMsg
+              definition:  EcWrstDsaSign
+              definition:  EcWrstDsaVerify
+              definition:  CC_EcpkiBuildEcDomain
+              definition:  CC_EcpkiGetEcDomain
+              definition:  CC_EcpkiGetSecp192r1DomainP
+              definition:  CC_EcpkiGetSecp192k1DomainP
+              definition:  CC_EcpkiGetSecp224r1DomainP
+              definition:  CC_EcpkiGetSecp224k1DomainP
+              definition:  CC_EcpkiGetSecp256r1DomainP
+              definition:  CC_EcpkiGetSecp256k1DomainP
+              definition:  CC_EcpkiGetSecp384r1DomainP
+              definition:  CC_EcpkiGetSecp521r1DomainP
+              definition:  CC_RndSetGenerateVectorFunc
+              definition:  CC_RndGenerateVectorInRange
+              definition:  RndGenerateWordsArrayInRange
+              definition:  Mult32x32
+              definition:  Mult48x16
+              definition:  LLF_RND_EntropyEstimateFull
+              definition:  LLF_RND_WaitRngInterrupt
+              definition:  LLF_RND_GetRoscSampleCnt
+              definition:  LLF_RND_GetFastestRosc
+              definition:  LLF_RND_GetCountRoscs
+              definition:  LLF_RND_TurnOffTrng
+              definition:  LLF_RND_RndCprngt
+              definition:  RNG_PLAT_SetUserRngParameters
+              definition:  CC_CommonIncMsbUnsignedCounter
+              definition:  CC_CommonIncLsbUnsignedCounter
+              definition:  CC_CommonDecrLsbUnsignedCounter
+              definition:  CC_CommonCmpMsbUnsignedCounters
+              definition:  CC_CommonCmpLsbUnsignedCounters
+              definition:  CC_CommonCmpLsWordsUnsignedCounters
+              definition:  CC_CommonGetBytesCounterEffectiveSizeInBits
+              definition:  CC_CommonGetWordsCounterEffectiveSizeInBits
+              definition:  CC_CommonDivideVectorBy2
+              definition:  CC_CommonShiftLeftBigEndVector
+              definition:  CC_CommonShiftRightVector
+              definition:  CC_CommonAdd2vectors
+              definition:  CC_CommonSubtractUintArrays
+              definition:  CC_CommonSubtractMSBUint8Arrays
+              definition:  CC_CommonReverseMemcpy
+              definition:  CC_CommonInPlaceConvertBytesWordsAndArrayEndianness
+              definition:  CC_CommonConvertMsbLsbBytesToLswMswWords
+              definition:  CC_CommonConvertLswMswWordsToMsbLsbBytes
+              definition:  CC_CommonConvertLsbMsbBytesToLswMswWords
+              definition:  CC_CommonConvertLswMswWordsToLsbMsbBytes
+              definition:  LLF_RND_StartTrngHW
+              definition:  LLF_RND_GetTrngSource
+              definition:  LLF_RND_RunTrngStartupTest
+              definition:  InitHashDrv
+              definition:  ProcessHashDrv
+              definition:  FinishHashDrv
+              definition:  PkaScalarMultAff
+              definition:  PkaBuildNaf
+              definition:  PkaEcWrstScalarMult
+              definition:  isSrpVerValid
+              definition:  isSrpModulusSizeValid
+              definition:  getHashDigestSize
+              definition:  mbedtls_srp_init
+              definition:  mbedtls_srp_pwd_ver_create
+              definition:  mbedtls_srp_clear
+              definition:  mbedtls_srp_host_pub_key_create
+              definition:  mbedtls_srp_host_proof_verify_and_calc
+              definition:  mbedtls_srp_user_pub_key_create
+              definition:  mbedtls_srp_user_proof_calc
+              definition:  mbedtls_srp_user_proof_verify
+              definition:  SRP_InitAndkMultiplierCalc
+              definition:  SRP_uScrambleCalc
+              definition:  SRP_UserCredDigCalc
+              definition:  SRP_xBuffCalc
+              definition:  SRP_UserNameDigCalc
+              definition:  SRP_UserProofCalc2
+              definition:  SRP_HostProofCalc
+              definition:  SRP_SessionKeyCalc
+              definition:  SRP_SecureMemCmp
+              definition:  SrpPwdVerifierCalc
+              definition:  SrpHostSharedSecretCalc
+              definition:  SrpUserSharedSecretCalc
+              definition:  SrpHostPublicKeyCalc
+              definition:  SrpUserPublicKeyCalc
+              definition:  CC_EcMontScalarmult
+              definition:  CC_EcMontScalarmultBase
+              definition:  CC_EcMontKeyPairBase
+              definition:  CC_EcMontKeyPair
+              definition:  CC_EcMontSeedKeyPair
+              definition:  EcMontScalarmult
+              definition:  EcMontPkaScalMultWithLadder
+              definition:  EcMontGetCurve25519Domain
+              definition:  CC_EcEdwSign
+              definition:  CC_EcEdwVerify
+              definition:  CC_EcEdwSeedKeyPair
+              definition:  CC_EcEdwKeyPair
+              definition:  EcEdwSpecialScalarMultBase
+              definition:  EcEdwSeedKeyPair
+              definition:  EcEdwScalarMultBase
+              definition:  EcEdwSign
+              definition:  EcEdwAddTwoScalarMult
+              definition:  EcEdwSignVerify
+              definition:  PkaEcEdwConvertAfn2Prc
+              definition:  PkaEcEdwPointToAfn
+              definition:  PkaEcEdwScalarMultBase
+              definition:  PkaEcEdwSpecialScalarMultBase
+              definition:  PkaEcEdwAddTwoScalarMult
+              definition:  PkaEcEdwDecompress
+              definition:  EcEdwGetDomain25519
+              definition:  mbedtls_aes_self_test
+              definition:  mbedtls_asn1_get_len
+              definition:  mbedtls_asn1_get_tag
+              definition:  mbedtls_asn1_get_bool
+              definition:  mbedtls_asn1_get_int
+              definition:  mbedtls_asn1_get_mpi
+              definition:  mbedtls_asn1_get_bitstring
+              definition:  mbedtls_asn1_get_bitstring_null
+              definition:  mbedtls_asn1_get_sequence_of
+              definition:  mbedtls_asn1_get_alg
+              definition:  mbedtls_asn1_get_alg_null
+              definition:  mbedtls_asn1_free_named_data
+              definition:  mbedtls_asn1_free_named_data_list
+              definition:  mbedtls_asn1_find_named_data
+              definition:  mbedtls_asn1_write_len
+              definition:  mbedtls_asn1_write_tag
+              definition:  mbedtls_asn1_write_raw_buffer
+              definition:  mbedtls_asn1_write_mpi
+              definition:  mbedtls_asn1_write_null
+              definition:  mbedtls_asn1_write_oid
+              definition:  mbedtls_asn1_write_algorithm_identifier
+              definition:  mbedtls_asn1_write_bool
+              definition:  mbedtls_asn1_write_int
+              definition:  mbedtls_asn1_write_printable_string
+              definition:  mbedtls_asn1_write_ia5_string
+              definition:  mbedtls_asn1_write_bitstring
+              definition:  mbedtls_asn1_write_octet_string
+              definition:  mbedtls_asn1_store_named_data
+              definition:  mbedtls_base64_encode
+              definition:  mbedtls_base64_decode
+              definition:  mbedtls_base64_self_test
+              definition:  mbedtls_mpi_init
+              definition:  mbedtls_mpi_free
+              definition:  mbedtls_mpi_grow
+              definition:  mbedtls_mpi_shrink
+              definition:  mbedtls_mpi_copy
+              definition:  mbedtls_mpi_swap
+              definition:  mbedtls_mpi_safe_cond_assign
+              definition:  mbedtls_mpi_safe_cond_swap
+              definition:  mbedtls_mpi_lset
+              definition:  mbedtls_mpi_get_bit
+              definition:  mbedtls_mpi_set_bit
+              definition:  mbedtls_mpi_lsb
+              definition:  mbedtls_mpi_bitlen
+              definition:  mbedtls_mpi_size
+              definition:  mbedtls_mpi_add_abs
+              definition:  mbedtls_mpi_cmp_abs
+              definition:  mbedtls_mpi_sub_abs
+              definition:  mbedtls_mpi_sub_mpi
+              definition:  mbedtls_mpi_sub_int
+              definition:  mbedtls_mpi_add_mpi
+              definition:  mbedtls_mpi_add_int
+              definition:  mbedtls_mpi_mul_mpi
+              definition:  mbedtls_mpi_mul_int
+              definition:  mbedtls_mpi_read_string
+              definition:  mbedtls_mpi_cmp_mpi
+              definition:  mbedtls_mpi_cmp_int
+              definition:  mbedtls_mpi_shift_r
+              definition:  mbedtls_mpi_shift_l
+              definition:  mbedtls_mpi_div_mpi
+              definition:  mbedtls_mpi_div_int
+              definition:  mbedtls_mpi_mod_int
+              definition:  mbedtls_mpi_write_string
+              definition:  mbedtls_mpi_read_binary
+              definition:  mbedtls_mpi_write_binary
+              definition:  mbedtls_mpi_mod_mpi
+              definition:  mbedtls_mpi_exp_mod
+              definition:  mbedtls_mpi_gcd
+              definition:  mbedtls_mpi_fill_random
+              definition:  mbedtls_mpi_inv_mod
+              definition:  mbedtls_mpi_is_prime
+              definition:  mbedtls_mpi_gen_prime
+              definition:  mbedtls_mpi_self_test
+              definition:  mbedtls_ccm_self_test
+              definition:  mbedtls_cipher_list
+              definition:  mbedtls_cipher_info_from_type
+              definition:  mbedtls_cipher_info_from_string
+              definition:  mbedtls_cipher_info_from_values
+              definition:  mbedtls_cipher_init
+              definition:  mbedtls_cipher_free
+              definition:  mbedtls_cipher_set_padding_mode
+              definition:  mbedtls_cipher_setup
+              definition:  mbedtls_cipher_setkey
+              definition:  mbedtls_cipher_set_iv
+              definition:  mbedtls_cipher_reset
+              definition:  mbedtls_cipher_update_ad
+              definition:  mbedtls_cipher_update
+              definition:  mbedtls_cipher_finish
+              definition:  mbedtls_cipher_write_tag
+              definition:  mbedtls_cipher_check_tag
+              definition:  mbedtls_cipher_crypt
+              definition:  mbedtls_cipher_auth_encrypt
+              definition:  mbedtls_cipher_auth_decrypt
+              definition:  mbedtls_cmac_self_test
+              definition:  mbedtls_ctr_drbg_init
+              definition:  mbedtls_ctr_drbg_reseed
+              definition:  mbedtls_ctr_drbg_seed_entropy_len
+              definition:  mbedtls_ctr_drbg_seed
+              definition:  mbedtls_ctr_drbg_free
+              definition:  mbedtls_ctr_drbg_set_prediction_resistance
+              definition:  mbedtls_ctr_drbg_set_entropy_len
+              definition:  mbedtls_ctr_drbg_set_reseed_interval
+              definition:  mbedtls_ctr_drbg_update
+              definition:  mbedtls_ctr_drbg_random_with_add
+              definition:  mbedtls_ctr_drbg_random
+              definition:  mbedtls_ctr_drbg_self_test
+              definition:  mbedtls_dhm_self_test
+              definition:  mbedtls_ecdh_init
+              definition:  mbedtls_ecdh_free
+              definition:  mbedtls_ecdh_make_params
+              definition:  mbedtls_ecdh_read_params
+              definition:  mbedtls_ecdh_get_params
+              definition:  mbedtls_ecdh_make_public
+              definition:  mbedtls_ecdh_read_public
+              definition:  mbedtls_ecdh_calc_secret
+              definition:  mbedtls_ecdsa_sign_det
+              definition:  mbedtls_ecdsa_write_signature
+              definition:  mbedtls_ecdsa_write_signature_det
+              definition:  mbedtls_ecdsa_read_signature
+              definition:  mbedtls_ecdsa_free
+              definition:  mbedtls_ecdsa_from_keypair
+              definition:  mbedtls_ecdsa_init
+              definition:  mbedtls_ecp_curve_list
+              definition:  mbedtls_ecp_grp_id_list
+              definition:  mbedtls_ecp_curve_info_from_grp_id
+              definition:  mbedtls_ecp_curve_info_from_tls_id
+              definition:  mbedtls_ecp_curve_info_from_name
+              definition:  mbedtls_ecp_point_init
+              definition:  mbedtls_ecp_group_init
+              definition:  mbedtls_ecp_keypair_init
+              definition:  mbedtls_ecp_point_free
+              definition:  mbedtls_ecp_group_free
+              definition:  mbedtls_ecp_keypair_free
+              definition:  mbedtls_ecp_copy
+              definition:  mbedtls_ecp_group_copy
+              definition:  mbedtls_ecp_set_zero
+              definition:  mbedtls_ecp_is_zero
+              definition:  mbedtls_ecp_point_cmp
+              definition:  mbedtls_ecp_point_read_string
+              definition:  mbedtls_ecp_point_write_binary
+              definition:  mbedtls_ecp_point_read_binary
+              definition:  mbedtls_ecp_tls_read_point
+              definition:  mbedtls_ecp_tls_write_point
+              definition:  mbedtls_ecp_tls_read_group
+              definition:  mbedtls_ecp_tls_write_group
+              definition:  mbedtls_ecp_check_pubkey
+              definition:  mbedtls_ecp_check_privkey
+              definition:  mbedtls_ecp_mul
+              definition:  mbedtls_ecp_muladd
+              definition:  mbedtls_ecp_gen_keypair_base
+              definition:  mbedtls_ecp_gen_keypair
+              definition:  mbedtls_ecp_gen_key
+              definition:  mbedtls_ecp_check_pub_priv
+              definition:  mbedtls_ecp_self_test
+              definition:  mbedtls_ecp_group_load
+              definition:  mbedtls_entropy_add_source
+              definition:  mbedtls_entropy_init
+              definition:  mbedtls_entropy_free
+              definition:  mbedtls_entropy_update_manual
+              definition:  mbedtls_entropy_gather
+              definition:  mbedtls_entropy_func
+              definition:  mbedtls_entropy_source_self_test
+              definition:  mbedtls_entropy_self_test
+              definition:  mbedtls_strerror
+              definition:  mbedtls_gcm_self_test
+              definition:  mbedtls_hmac_drbg_init
+              definition:  mbedtls_hmac_drbg_update
+              definition:  mbedtls_hmac_drbg_seed_buf
+              definition:  mbedtls_hmac_drbg_reseed
+              definition:  mbedtls_hmac_drbg_seed
+              definition:  mbedtls_hmac_drbg_set_prediction_resistance
+              definition:  mbedtls_hmac_drbg_set_entropy_len
+              definition:  mbedtls_hmac_drbg_set_reseed_interval
+              definition:  mbedtls_hmac_drbg_random_with_add
+              definition:  mbedtls_hmac_drbg_random
+              definition:  mbedtls_hmac_drbg_free
+              definition:  mbedtls_hmac_drbg_self_test
+              definition:  mbedtls_md_list
+              definition:  mbedtls_md_info_from_type
+              definition:  mbedtls_md_info_from_string
+              definition:  mbedtls_md_init
+              definition:  mbedtls_md_free
+              definition:  mbedtls_md_clone
+              definition:  mbedtls_md_setup
+              definition:  mbedtls_md_init_ctx
+              definition:  mbedtls_md_starts
+              definition:  mbedtls_md_update
+              definition:  mbedtls_md_finish
+              definition:  mbedtls_md
+              definition:  mbedtls_md_hmac_starts
+              definition:  mbedtls_md_hmac_update
+              definition:  mbedtls_md_hmac_finish
+              definition:  mbedtls_md_hmac_reset
+              definition:  mbedtls_md_hmac
+              definition:  mbedtls_md_process
+              definition:  mbedtls_md_get_size
+              definition:  mbedtls_md_get_type
+              definition:  mbedtls_md_get_name
+              definition:  mbedtls_memory_buffer_set_verify
+              definition:  mbedtls_memory_buffer_alloc_verify
+              definition:  mbedtls_memory_buffer_alloc_init
+              definition:  mbedtls_memory_buffer_alloc_free
+              definition:  mbedtls_memory_buffer_alloc_self_test
+              definition:  mbedtls_oid_get_sig_alg_desc
+              definition:  mbedtls_oid_get_sig_alg
+              definition:  mbedtls_oid_get_oid_by_sig_alg
+              definition:  mbedtls_oid_get_pk_alg
+              definition:  mbedtls_oid_get_oid_by_pk_alg
+              definition:  mbedtls_oid_get_ec_grp
+              definition:  mbedtls_oid_get_oid_by_ec_grp
+              definition:  mbedtls_oid_get_cipher_alg
+              definition:  mbedtls_oid_get_md_alg
+              definition:  mbedtls_oid_get_oid_by_md
+              definition:  mbedtls_oid_get_md_hmac
+              definition:  mbedtls_oid_get_numeric_string
+              definition:  mbedtls_pem_init
+              definition:  mbedtls_pem_read_buffer
+              definition:  mbedtls_pem_free
+              definition:  mbedtls_pem_write_buffer
+              definition:  mbedtls_pk_get_bitlen
+              definition:  mbedtls_pk_init
+              definition:  mbedtls_pk_free
+              definition:  mbedtls_pk_info_from_type
+              definition:  mbedtls_pk_setup
+              definition:  mbedtls_pk_can_do
+              definition:  mbedtls_pk_verify
+              definition:  mbedtls_pk_verify_ext
+              definition:  mbedtls_pk_sign
+              definition:  mbedtls_pk_decrypt
+              definition:  mbedtls_pk_encrypt
+              definition:  mbedtls_pk_check_pair
+              definition:  mbedtls_pk_debug
+              definition:  mbedtls_pk_get_name
+              definition:  mbedtls_pk_get_type
+              definition:  mbedtls_pkcs5_pbkdf2_hmac
+              definition:  mbedtls_pkcs5_pbes2
+              definition:  mbedtls_pkcs5_self_test
+              definition:  mbedtls_pk_parse_subpubkey
+              definition:  mbedtls_pk_parse_key
+              definition:  mbedtls_pk_parse_public_key
+              definition:  mbedtls_pk_write_pubkey
+              definition:  mbedtls_pk_write_pubkey_der
+              definition:  mbedtls_pk_write_key_der
+              definition:  mbedtls_pk_write_pubkey_pem
+              definition:  mbedtls_pk_write_key_pem
+              definition:  mbedtls_platform_set_calloc_free
+              definition:  mbedtls_platform_setup
+              definition:  mbedtls_platform_teardown
+              definition:  mbedtls_rsa_deduce_primes
+              definition:  mbedtls_rsa_deduce_private_exponent
+              definition:  mbedtls_rsa_validate_crt
+              definition:  mbedtls_rsa_validate_params
+              definition:  mbedtls_rsa_deduce_crt
+              definition:  mbedtls_rsa_self_test
+              definition:  mbedtls_sha1_ret
+              definition:  mbedtls_sha1
+              definition:  mbedtls_sha1_self_test
+              definition:  mbedtls_sha256_ret
+              definition:  mbedtls_sha256
+              definition:  mbedtls_sha256_self_test
+              definition:  mbedtls_sha512_init
+              definition:  mbedtls_sha512_free
+              definition:  mbedtls_sha512_clone
+              definition:  mbedtls_sha512_starts_ret
+              definition:  mbedtls_sha512_starts
+              definition:  mbedtls_internal_sha512_process
+              definition:  mbedtls_sha512_process
+              definition:  mbedtls_sha512_update_ret
+              definition:  mbedtls_sha512_update
+              definition:  mbedtls_sha512_finish_ret
+              definition:  mbedtls_sha512_finish
+              definition:  mbedtls_sha512_ret
+              definition:  mbedtls_sha512
+              definition:  mbedtls_sha512_self_test
+              definition:  mbedtls_version_get_number
+              definition:  mbedtls_version_get_string
+              definition:  mbedtls_version_get_string_full
+              definition:  mbedtls_version_check_feature
+              definition:  __use_no_semihosting
+              definition:  calloc
+              definition:  malloc
+              definition:  free
+              definition:  realloc
+              definition:  __aeabi_lmul
+              definition:  _ll_mul
+              definition:  __aeabi_uldivmod
+              definition:  _ll_udiv
+              definition:  __2printf
+              definition:  __2snprintf
+              definition:  _printf_pre_padding
+              definition:  _printf_post_padding
+              definition:  _printf_str
+              definition:  _printf_int_dec
+              definition:  _printf_int_hex
+              definition:  _printf_longlong_hex
+              definition:  __printf
+              definition:  srand
+              definition:  _rand_init
+              definition:  exit
+              definition:  strstr
+              definition:  memcmp
+              definition:  strlen
+              definition:  memmove
+              definition:  __aeabi_memcpy
+              definition:  __rt_memcpy
+              definition:  __aeabi_memmove4
+              definition:  __aeabi_memmove8
+              definition:  __aeabi_memmove
+              definition:  __rt_memmove
+              definition:  __aeabi_memset
+              definition:  _memset_w
+              definition:  _memset
+              definition:  __aeabi_memclr
+              definition:  __rt_memclr
+              definition:  __aeabi_memclr4
+              definition:  __aeabi_memclr8
+              definition:  __rt_memclr_w
+              definition:  strcmp
+              definition:  __aeabi_uread4
+              definition:  __rt_uread4
+              definition:  __aeabi_uidiv
+              definition:  __aeabi_uidivmod
+              definition:  __aeabi_idiv
+              definition:  __aeabi_idivmod
+              definition:  __use_two_region_memory
+              definition:  __rt_heap_escrow
+              definition:  __rt_heap_expand
+              definition:  __I$use$semihosting
+              definition:  __use_no_semihosting_swi
+              definition:  __rt_heap_descriptor
+              definition:  __use_no_heap
+              definition:  __heap$guard
+              definition:  _terminate_user_alloc
+              definition:  _init_user_alloc
+              definition:  __Heap_Full
+              definition:  __Heap_Broken
+              definition:  _init_alloc
+              definition:  __Heap_Initialize
+              definition:  __Heap_DescSize
+              definition:  _printf_int_common
+              definition:  _printf_char_common
+              definition:  _sputc
+              definition:  _snputc
+              definition:  _printf_cs_common
+              definition:  _printf_char
+              definition:  _printf_string
+              definition:  _printf_char_file
+              definition:  __rt_udiv10
+              definition:  __Heap_ProvideMemory
+              definition:  ferror
+              definition:  _initio
+              definition:  _terminateio
+              definition:  __rt_SIGRTMEM
+              definition:  $Super$$_sys_open
+              definition:  _sys_close
+              definition:  _sys_write
+              definition:  _sys_read
+              definition:  _sys_istty
+              definition:  _sys_seek
+              definition:  _sys_ensure
+              definition:  _sys_flen
+              definition:  __semihosting_library_function
+              definition:  __flsbuf
+              definition:  __flsbuf_byte
+              definition:  __flsbuf_wide
+              definition:  setvbuf
+              definition:  freopen
+              definition:  fopen
+              definition:  _fclose_internal
+              definition:  fclose
+              definition:  __sig_exit
+              definition:  __rt_SIGRTRED
+              definition:  __rt_SIGRTMEM_inner
+              definition:  _fseek
+              definition:  fseek
+              definition:  _seterr
+              definition:  _writebuf
+              definition:  _fflush
+              definition:  _deferredlazyseek
+              definition:  __default_signal_display
+              definition:  __rt_SIGRTRED_inner
+              definition:  _ftell_internal
+              definition:  ftell
+              definition:  __aeabi_errno_addr
+              definition:  __errno
+              definition:  __rt_errno_addr
+              definition:  __decompress
+              definition:  __decompress1
+              definition:  __ARM_common_ll_muluu
+              definition:  __ARM_common_switch8
+              definition:  _is_digit
+              definition:  fputc
+              definition:  commandHandlerROMCommandTable
+              definition:  otpmDrvDefaultConfig
+              definition:  systemMgrPriorityByEventDefaults
+              definition:  systemMgrEventByPriorityDefaults
+              definition:  systemMgrROMPhaseEntryHandlers
+              definition:  MpuRegionConfig
+              definition:  certMagicNumber
+              definition:  certMainMaxSize
+              definition:  g_SramPkaAddr
+              definition:  curve_25519_data
+              definition:  HmacHashInfo_t
+              definition:  HmacSupportedHashModes_t
+              definition:  HashAlgMode2mbedtlsString
+              definition:  regTemps
+              definition:  RsaHashInfo_t
+              definition:  RsaHash_CC_mbedtls_Info
+              definition:  RsaSupportedHashModes_t
+              definition:  g_PrimeProduct
+              definition:  g_SmallPrime
+              definition:  g_LastProductPrime
+              definition:  ecpki_hash_info
+              definition:  ecpki_supported_hash_modes
+              definition:  ecDomainsFuncP
+              definition:  mbedtls_cipher_definitions
+              definition:  mbedtls_sha1_info
+              definition:  mbedtls_sha224_info
+              definition:  mbedtls_sha256_info
+              definition:  mbedtls_sha384_info
+              definition:  mbedtls_sha512_info
+              definition:  mbedtls_rsa_info
+              definition:  mbedtls_eckey_info
+              definition:  mbedtls_eckeydh_info
+              definition:  mbedtls_ecdsa_info
+              definition:  __stdin_name
+              definition:  __stdout_name
+              definition:  __stderr_name
+              definition:  gCcRegBase
+              definition:  diagControl
+              definition:  lifecycleMgr
+              definition:  macDrvState
+              definition:  nvmMgr
+              definition:  otpmDrv
+              definition:  platformState
+              definition:  platformDriverInitFunctions
+              definition:  systemMgrRAMPhaseEntryHandlers
+              definition:  hbkId2HashSizeWords
+              definition:  CCSymCryptoMutex
+              definition:  CCAsymCryptoMutex
+              definition:  pCCRndCryptoMutex
+              definition:  CCApbFilteringRegMutex
+              definition:  CCRndCryptoMutex
+              definition:  mbedtls_calloc
+              definition:  mbedtls_free
+              definition:  __aeabi_stdin
+              definition:  __aeabi_stdout
+              definition:  __aeabi_stderr
+              definition:  commandHandlerRAMCommandTable
+              definition:  ccPalTrng
+              definition:  cryptoMgr
+              definition:  diagFatalErrorDumpHandlers
+              definition:  healthMonitorState
+              definition:  patchMgr
+              definition:  sessionMgrState
+              definition:  systemMgrState
+              definition:  ramVectorTable
+              definition:  zeroBuff
+              definition:  mbedtls_cipher_supported
+              definition:  _random_number_data
+              definition:  __stdin
+              definition:  __stdout
+              definition:  __stderr
+              reference :  __decompress_flags
+              weak ref  :  __decompress_sizes
+
+==============================================================================
+
+Loading User Libraries.
+
+
+==============================================================================
+
+Loading System Libraries.
+
+Searching for ARM libraries in directory /proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/
+Searching for ARM libraries in directory /proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/libcxx/
+Selecting library /proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/c_p.l.
+/proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/c_p.l
+Selecting library /proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/fz_ps.l.
+/proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/fz_ps.l
+Selecting library /proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/h_p.l.
+/proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/h_p.l
+Selecting library /proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/m_ps.l.
+/proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/m_ps.l
+Selecting library /proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/vfpsupport.l.
+/proj_aptina/tools/icad/arm/DS5/DS-5_v5.27.1/sw/ARMCompiler5.06u5/bin/../lib/armlib/vfpsupport.l
+Selecting member dc.o(c_p.l) to define __decompress_flags.
+Loading member dc.o from c_p.l.
+              definition:  __decompress_flags
+              definition:  __decompress_sizes
+              definition:  BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2
+Checking duplicate symbol definitions
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x2000000d
+
+  Load Region PATCH_CODE_BLOCK (Base: 0x20000000, Size: 0x0000001c, Max: 0x0000c000, ABSOLUTE)
+
+    Execution Region VECTORS (Base: 0x00000000, Size: 0x000000c0, Max: 0x000000c0, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Zero   RW            1    VECTORS.bss         anon$$obj.o
+
+
+    Execution Region CODE (Base: 0x000000c0, Size: 0x0003ff40, Max: 0x0003ff40, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x000000c0   0x0003ff40   Zero   RW            2    CODE.bss            anon$$obj.o
+
+
+    Execution Region PATCH_TABLE_LOADER (Base: 0x20000000, Size: 0x00000004, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000004   Data   RO           10    .constdata          PatchTable.o
+
+
+    Execution Region PATCH_CODE_LOADER (Base: 0x20000004, Size: 0x00000010, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000004   0x00000004   Code   RO           14    .rev16_text         PatchLoader.o
+    0x20000008   0x00000004   Code   RO           15    .revsh_text         PatchLoader.o
+    0x2000000c   0x00000004   Code   RO           16  * .text               PatchLoader.o
+    0x20000010   0x00000004   Data   RO           11    .constdata          PatchTable.o
+
+
+    Execution Region PATCH_CODE (Base: 0x20000014, Size: 0x00000008, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000014   0x00000004   Code   RO            8    .rev16_text         PatchTable.o
+    0x20000018   0x00000004   Code   RO            9    .revsh_text         PatchTable.o
+
+
+    Execution Region PATCH_CODE_RW (Base: 0x2000001c, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region PATCH_DATA_CONST (Base: 0x2000001c, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region PATCH_DATA_RW (Base: 0x2000001c, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region PATCH_DATA_ZI (Base: 0x2000001c, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region DATA (Base: 0x2000c000, Size: 0x00001000, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000c000   0x00001000   Zero   RW            3    DATA.bss            anon$$obj.o
+
+
+    Execution Region HEAP (Base: 0x2000d000, Size: 0x00002000, Max: 0x00002000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000d000   0x00002000   Zero   RW            4    HEAP.bss            anon$$obj.o
+
+
+    Execution Region MAIN_STACK (Base: 0x2000f000, Size: 0x00001000, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x2000f000   0x00001000   Zero   RW            5    MAIN_STACK.bss      anon$$obj.o
+
+
+    Execution Region ICORE_REGISTERS (Base: 0x3fff0000, Size: 0x00001000, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x3fff0000   0x00001000   Zero   RW            6    ICORE_REGISTERS.bss  anon$$obj.o
+
+
+    Execution Region SHARED_MEMORY (Base: 0x3fff1000, Size: 0x00001000, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x3fff1000   0x00001000   Zero   RW            7    SHARED_MEMORY.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+        20          0          8          0     286720        332   Object Totals
+         0          0          0          0     286720          0   (incl. Generated)
+         0          0          0          0          0          0   (incl. Padding)
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+        20          0          8          0     286720        176   Grand Totals
+        20          0          8          0     286720        176   ELF Image Totals
+        20          0          8          0          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                   28 (   0.03kB)
+    Total RW  Size (RW Data + ZI Data)            286720 ( 280.00kB)
+    Total ROM Size (Code + RO Data + RW Data)         28 (   0.03kB)
+
+==============================================================================
+

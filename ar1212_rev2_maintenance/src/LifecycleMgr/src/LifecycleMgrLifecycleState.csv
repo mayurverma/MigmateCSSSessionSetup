@@ -1,0 +1,5 @@
+Name,Value,Comment
+CM,0,Chip Manufacture
+DM,1,Device Manufacture
+SECURE,2,Secure
+RMA,3,RMA

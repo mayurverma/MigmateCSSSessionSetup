@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+				xmlns:cadence="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions/cadenceSpiritVendorExtensions.xsd http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.accellera.org/images/xmlschema/spirit/1685-2009/index.xsd"><!--http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd"-->
+  <spirit:vendor>spiritconsortium.org</spirit:vendor>
+  <spirit:library>uvm_reg_ex</spirit:library>
+  <spirit:name>u_mcu_sysctrl_registers</spirit:name>
+  <spirit:version>1685-2009</spirit:version>
+  <spirit:memoryMaps>
+	<spirit:memoryMap>
+	<spirit:name>mcu_sysctrl_registers_map</spirit:name>
+		<spirit:addressBlock>
+			<spirit:name>mcu_sysctrl</spirit:name>
+			<spirit:baseAddress>0x0000</spirit:baseAddress>
+			<spirit:range>0x3fff</spirit:range>
+			<spirit:width>32</spirit:width>
+
+<!-- ************************ mem_ctrl ************************************************ -->
+			<spirit:register>
+				<spirit:name>mem_ctrl</spirit:name>
+				<spirit:addressOffset>0x0000</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>remap</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_remap_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ pmu_ctrl ************************************************ -->
+			<spirit:register>
+				<spirit:name>pmu_ctrl</spirit:name>
+				<spirit:addressOffset>0x0004</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reserved</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reset_control ************************************************ -->
+			<spirit:register>
+				<spirit:name>reset_control</spirit:name>
+				<spirit:addressOffset>0x0008</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>        <!-- actually some bits are RW, other RO on this reg -->
+				<spirit:reset>
+					<spirit:value>0x00000040</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>lockup_reset</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_lockupreset_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>reserved_1</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>pll_lock_status</spirit:name>
+					<spirit:bitOffset>2</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_plllockstatus_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>soft_reset</spirit:name>
+					<spirit:bitOffset>3</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_softreset_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>hard_reset</spirit:name>
+					<spirit:bitOffset>4</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_hardreset_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>cpu_wait</spirit:name>
+					<spirit:bitOffset>5</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_cpuwait_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>vcore_clk_en</spirit:name>
+					<spirit:bitOffset>6</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_vcore_clk_en_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>i2c_write_crc_no_reset</spirit:name>
+					<spirit:bitOffset>7</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_i2c_write_crc_no_reset_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>reserved_31_8</spirit:name>
+					<spirit:bitOffset>8</spirit:bitOffset>
+					<spirit:bitWidth>24</spirit:bitWidth>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reset_info ************************************************ -->
+			<spirit:register>
+				<spirit:name>reset_info</spirit:name>
+				<spirit:addressOffset>0x0010</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reset_cause</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>3</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_resetcause_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg0 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg0</spirit:name>
+				<spirit:addressOffset>0x3FE0</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000026</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg0</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg0_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg1 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg1</spirit:name>
+				<spirit:addressOffset>0x3FE4</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x000000B8</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg1</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg1_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg2 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg2</spirit:name>
+				<spirit:addressOffset>0x3FE8</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x0000001B</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg2</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg2_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg3 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg3</spirit:name>
+				<spirit:addressOffset>0x3FEC</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg3</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg3_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg4 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg4</spirit:name>
+				<spirit:addressOffset>0x3FD0</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000004</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg4</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg4_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg5 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg5</spirit:name>
+				<spirit:addressOffset>0x3FD4</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg5</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg5_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg6 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg6</spirit:name>
+				<spirit:addressOffset>0x3FD8</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg6</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg6_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ reg7 ************************************************ -->
+			<spirit:register>
+				<spirit:name>reg7</spirit:name>
+				<spirit:addressOffset>0x3FDC</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>reg7</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_reg7_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ component_id0 ************************************************ -->
+			<spirit:register>
+				<spirit:name>component_id0</spirit:name>
+				<spirit:addressOffset>0x3FF0</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x0000000D</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>id0</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_componentid0_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ component_id1 ************************************************ -->
+			<spirit:register>
+				<spirit:name>component_id1</spirit:name>
+				<spirit:addressOffset>0x3FF4</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x000000F0</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>id1</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_componentid1_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ component_id2 ************************************************ -->
+			<spirit:register>
+				<spirit:name>component_id2</spirit:name>
+				<spirit:addressOffset>0x3FF8</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000005</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>id2</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_componentid2_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ component_id3 ************************************************ -->
+			<spirit:register>
+				<spirit:name>component_id3</spirit:name>
+				<spirit:addressOffset>0x3FFC</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x000000B1</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>id3</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.mcu_sysctrl_componentid3_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+		</spirit:addressBlock>
+	</spirit:memoryMap>
+  </spirit:memoryMaps>
+</spirit:component>

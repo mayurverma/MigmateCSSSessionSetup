@@ -1,0 +1,23 @@
+Use the crypto_helper.py:
+
+import crypto_helper
+crypto = CryptoHelper()
+
+# generate a new RSA key pair
+newkey = crypto.generate_random_rsa_key()
+
+# Extract the modulus and private exponent
+n_as_hexint = hex(newkey.n)
+d_as_hexint = hex(newkey.d)
+
+# Store these as the modulus (n_as_hexint) and private exponent (d_as_hexint)
+MODULUS = n_as_hexint # remove quotes from string
+PRIV_EXP = d_as_hexint # remove quotes from string
+
+# Generate the Hbk0 hash of the public key and truncate to 16 bytes
+Hbk0 = crypto.hbk_gen(newkey, truncated=True)
+
+# Calculate the number of zero bits in the hash
+Hbk0_zero_bits = crypto.get_number_zero_bits(Hbk0)
+
+# Store Hbk0 in the OTPM image, and Hbk0_zero_bits

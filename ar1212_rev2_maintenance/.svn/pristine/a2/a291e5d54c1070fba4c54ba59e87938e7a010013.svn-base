@@ -1,0 +1,11 @@
+/// Brief description of the function.
+///
+/// Detailed description of the function, including ranges and restrictions of
+/// the arguments and any returned values. The description should also define
+/// units and implementation constraints.
+///
+/// \param[in]     arg1    Description of argument 1.
+/// \param[out]    arg2    Description of argument 2.
+/// \param[in/out] arg3    Description of argument 3.
+/// \returns Description of what the function returns.
+//

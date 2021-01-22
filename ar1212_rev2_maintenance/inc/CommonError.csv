@@ -1,0 +1,18 @@
+Name,Value,Comment
+SUCCESS,0,Operation successful
+NOENT,1,No entry found
+SYSERR,2,System error occurred
+IO,3,I/O error occurred
+NODEV,4,No device or object found
+AGAIN,6,Try again
+ACCESS,8,Permission denied
+BUSY,9,Busy
+INVAL,12,Invalid parameter or argument
+NOSPC,13,No memory or resource available
+RANGE,14,Parameter or argument out-of-range
+ALREADY,16,Operation already in-progress or done
+CANCELLED,17,Operation cancelled
+TIMEDOUT,18,Operation timed-out
+BADMSG,19,Malformed message or parameter
+NOMSG,20,No message found
+NOEXEC,21,Cannot execute

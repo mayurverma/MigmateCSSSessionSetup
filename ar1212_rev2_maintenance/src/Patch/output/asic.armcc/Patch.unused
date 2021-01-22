@@ -1,0 +1,8 @@
+;#<FEEDBACK># ARM Linker, 5060528: Last Updated: Thu Jan  9 13:38:43 2020
+;VERSION 0.2
+;FILE PatchLoader.o
+__asm___13_PatchLoader_c_6f536266____REV16 <= USED 0
+__asm___13_PatchLoader_c_6f536266____REVSH <= USED 0
+;FILE PatchTable.o
+__asm___12_PatchTable_c_b820f3ae____REV16 <= USED 0
+__asm___12_PatchTable_c_b820f3ae____REVSH <= USED 0

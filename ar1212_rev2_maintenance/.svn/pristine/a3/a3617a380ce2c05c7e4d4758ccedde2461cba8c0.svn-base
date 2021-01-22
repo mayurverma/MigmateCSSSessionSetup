@@ -1,0 +1,1141 @@
+<?xml version="1.0"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+				xmlns:cadence="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions/cadenceSpiritVendorExtensions.xsd http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.accellera.org/images/xmlschema/spirit/1685-2009/index.xsd"><!--http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd"-->
+  <spirit:vendor>spiritconsortium.org</spirit:vendor>
+  <spirit:library>uvm_reg_ex</spirit:library>
+  <spirit:name>u_cyber_vcore</spirit:name>
+  <spirit:version>1.4</spirit:version>
+  <spirit:memoryMaps>
+	<spirit:memoryMap>
+	<spirit:name>mac_roi_map</spirit:name>
+		<spirit:addressBlock>
+			<spirit:name>crypto_vcore</spirit:name>
+			<spirit:baseAddress>0x0000</spirit:baseAddress>
+			<spirit:range>0x1FFF</spirit:range>
+			<spirit:width>32</spirit:width>
+
+<!-- ************************ session_key7 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key7</spirit:name>
+				<spirit:addressOffset>0x001c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0xca47248a</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key7</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[255:224]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ session_key6 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key6</spirit:name>
+				<spirit:addressOffset>0x0018</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0xc0b6f837</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key6</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[223:192]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ session_key5 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key5</spirit:name>
+				<spirit:addressOffset>0x0014</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x2a97ac43</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key5</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[191:160]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ session_key4 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key4</spirit:name>
+				<spirit:addressOffset>0x0010</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x508308ed</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key4</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[159:128]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ session_key3 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key3</spirit:name>
+				<spirit:addressOffset>0x000c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key3</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[127:96]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ session_key2 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key2</spirit:name>
+				<spirit:addressOffset>0x008</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key2</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[95:64]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ session_key1 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key1</spirit:name>
+				<spirit:addressOffset>0x0004</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key1</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[63:32]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ session_key0 ************************************************ -->
+			<spirit:register>
+				<spirit:name>session_key0</spirit:name>
+				<spirit:addressOffset>0x0000</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>session_key0</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_key_reg[31:0]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ iv3 ************************************************ -->
+			<spirit:register>
+				<spirit:name>iv3</spirit:name>
+				<spirit:addressOffset>0x002c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0xffd2b598</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>iv3</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_iv_reg[127:96]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ iv2 ************************************************ -->
+			<spirit:register>
+				<spirit:name>iv2</spirit:name>
+				<spirit:addressOffset>0x0028</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0xfeabc901</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>iv2</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_iv_reg[95:64]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ iv1 ************************************************ -->
+			<spirit:register>
+				<spirit:name>iv1</spirit:name>
+				<spirit:addressOffset>0x0024</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x9262d2be</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>iv1</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_iv_reg[63:32]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ iv0 ************************************************ -->
+			<spirit:register>
+				<spirit:name>iv0</spirit:name>
+				<spirit:addressOffset>0x0020</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000001</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>iv0</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.session_iv_reg[31:0]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ gmac0 ************************************************ -->
+			<spirit:register>
+				<spirit:name>gmac0</spirit:name>
+				<spirit:addressOffset>0x0080</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>gmac0</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aeshp.aes_mac_reg[127:96]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ gmac1 ************************************************ -->
+			<spirit:register>
+				<spirit:name>gmac1</spirit:name>
+				<spirit:addressOffset>0x0084</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>gmac1</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aeshp.aes_mac_reg[95:64]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ gmac2 ************************************************ -->
+			<spirit:register>
+				<spirit:name>gmac2</spirit:name>
+				<spirit:addressOffset>0x0088</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>gmac2</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aeshp.aes_mac_reg[63:32]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ gmac3 ************************************************ -->
+			<spirit:register>
+				<spirit:name>gmac3</spirit:name>
+				<spirit:addressOffset>0x008c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>gmac3</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aeshp.aes_mac_reg[31:0]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ cmac0 ************************************************ -->
+
+			<spirit:register>
+				<spirit:name>cmac0</spirit:name>
+				<spirit:addressOffset>0x0090</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>cmac0</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aescmac_wrapper.aes_mac_reg[127:96]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ cmac1 ************************************************ -->
+			<spirit:register>
+				<spirit:name>cmac1</spirit:name>
+				<spirit:addressOffset>0x0094</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>cmac1</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aescmac_wrapper.aes_mac_reg[95:64]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ cmac2 ************************************************ -->
+			<spirit:register>
+				<spirit:name>cmac2</spirit:name>
+				<spirit:addressOffset>0x0098</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>cmac2</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aescmac_wrapper.aes_mac_reg[63:32]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ cmac3 ************************************************ -->
+			<spirit:register>
+				<spirit:name>cmac3</spirit:name>
+				<spirit:addressOffset>0x009c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>cmac3</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_aescmac_wrapper.aes_mac_reg[31:0]"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ cnfg ************************************************ -->
+			<spirit:register>
+				<spirit:name>cnfg</spirit:name>
+				<spirit:addressOffset>0x0100</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<!--<spirit:access>read-write</spirit:access>-->
+				<spirit:reset>
+					<spirit:value>0x10000004</spirit:value>
+					<spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>aescmac_en</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				    <spirit:access>read-write</spirit:access>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aescmac_en_reg">
+								<cadence:fieldData cadence:bitOffset="0x0" cadence:size="1"/>
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>pack_mode</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>2</spirit:bitWidth>
+				    <spirit:access>read-write</spirit:access>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.pack_mode_reg">
+								<cadence:fieldData cadence:bitOffset="0x1" cadence:size="2"/>
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>pack_enable</spirit:name>
+					<spirit:bitOffset>3</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				    <spirit:access>read-write</spirit:access>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.pack_enable_reg">
+								<cadence:fieldData cadence:bitOffset="0x3" cadence:size="1"/>
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>security_pll_req</spirit:name>
+					<spirit:bitOffset>26</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				    <spirit:access>read-write</spirit:access>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.security_pll_req_reg">
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>auth_frame_start_en</spirit:name>
+					<spirit:bitOffset>27</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				    <spirit:access>read-write</spirit:access>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.auth_frame_start_en_reg">
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>auth_auto_strt_en</spirit:name>
+					<spirit:bitOffset>28</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				    <spirit:access>read-write</spirit:access>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.auth_auto_strt_en_reg">
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>cpu_vcore_reset</spirit:name>
+					<spirit:bitOffset>29</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:modifiedWriteValue>clear</spirit:modifiedWriteValue>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.cpu_vcore_reset_reg">
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>cpu_gmac_reset</spirit:name>
+					<spirit:bitOffset>30</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:modifiedWriteValue>clear</spirit:modifiedWriteValue>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.cpu_gmac_reset_reg">
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>cpu_cmac_reset</spirit:name>
+					<spirit:bitOffset>31</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:modifiedWriteValue>clear</spirit:modifiedWriteValue>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.cpu_gmac_reset_reg">
+							</cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ pack_val_lo ************************************************ -->
+			<spirit:register>
+				<spirit:name>pack_val_lo</spirit:name>
+				<spirit:addressOffset>0x0104</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>pack_val_lo</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.pack_val_lo_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ spare_reg22 ************************************************ -->
+			<spirit:register>
+				<spirit:name>spare_reg22</spirit:name>
+				<spirit:addressOffset>0x0108</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>spare_reg22</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.spare_reg22"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************- roi_row_cnfg ************************************************ -->
+			<spirit:register>
+				<spirit:name>roi_row_cnfg</spirit:name>
+				<spirit:addressOffset>0x010c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x01000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>first_row</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>12</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.first_row_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>last_row</spirit:name>
+					<spirit:bitOffset>12</spirit:bitOffset>
+					<spirit:bitWidth>12</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.last_row_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>row_skip</spirit:name>
+					<spirit:bitOffset>24</spirit:bitOffset>
+					<spirit:bitWidth>8</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.row_skip_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ roi_col_cnfg ************************************************ -->
+			<spirit:register>
+				<spirit:name>roi_col_cnfg</spirit:name>
+				<spirit:addressOffset>0x0110</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x01000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>first_col</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>12</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.first_column_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>last_col</spirit:name>
+					<spirit:bitOffset>12</spirit:bitOffset>
+					<spirit:bitWidth>12</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.last_column_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>col_skip</spirit:name>
+					<spirit:bitOffset>24</spirit:bitOffset>
+					<spirit:bitWidth>8</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.column_skip_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ roi ************************************************ -->
+			<spirit:register>
+				<spirit:name>roi</spirit:name>
+				<spirit:addressOffset>0x0114</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>roi_mode_en</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.roi_mode_en_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>roi_init</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>roi_fc_update</spirit:name>
+					<spirit:bitOffset>2</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.roi_init_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ roi_frame_ident ************************************************ -->
+			<spirit:register>
+				<spirit:name>roi_frame_ident</spirit:name>
+				<spirit:addressOffset>0x0118</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>roi_frame_ident</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.roi_frame_ident_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ strt_frame_ident ************************************************ -->
+			<spirit:register>
+				<spirit:name>strt_frame_ident</spirit:name>
+				<spirit:addressOffset>0x011c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>strt_frame_ident</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.strt_frame_ident_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ aeshp_start ************************************************ -->
+			<spirit:register>
+				<spirit:name>aeshp_start</spirit:name>
+				<spirit:addressOffset>0x0120</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>aeshp_start</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+                    <spirit:modifiedWriteValue>clear</spirit:modifiedWriteValue>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aeshp_start_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aeshp_abort</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+                    <spirit:modifiedWriteValue>clear</spirit:modifiedWriteValue>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aeshp_abort_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ aeshp_cnfg ************************************************ -->
+			<spirit:register>
+				<spirit:name>aeshp_cnfg</spirit:name>
+				<spirit:addressOffset>0x0124</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>aeshp_authmode</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aeshp_authmode_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aeshp_encdec</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aeshp_encdec_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aeshp_keysize</spirit:name>
+					<spirit:bitOffset>2</spirit:bitOffset>
+					<spirit:bitWidth>2</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aeshp_keysize_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ aescmac_start ************************************************ -->
+			<spirit:register>
+				<spirit:name>aescmac_start</spirit:name>
+				<spirit:addressOffset>0x0128</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>aescmac_start</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+                    <spirit:modifiedWriteValue>clear</spirit:modifiedWriteValue>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aescmac_start_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_abort</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+                    <spirit:modifiedWriteValue>clear</spirit:modifiedWriteValue>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aescmac_abort_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ aescmac_cnfg ************************************************ -->
+			<spirit:register>
+				<spirit:name>aescmac_cnfg</spirit:name>
+				<spirit:addressOffset>0x012c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>aescmac_authmode</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aescmac_authmode_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_encdec</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aescmac_encdec_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_keysize</spirit:name>
+					<spirit:bitOffset>2</spirit:bitOffset>
+					<spirit:bitWidth>2</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aescmac_keysize_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_mode</spirit:name>
+					<spirit:bitOffset>4</spirit:bitOffset>
+					<spirit:bitWidth>4</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.aescmac_mode_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ aescmac_status ************************************************ -->
+			<spirit:register>
+				<spirit:name>aescmac_status</spirit:name>
+				<spirit:addressOffset>0x0130</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>aescmac_valid</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aescmac_valid"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_ready</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aescmac_ready"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_go</spirit:name>
+					<spirit:bitOffset>2</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aescmac_go"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_busy</spirit:name>
+					<spirit:bitOffset>3</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aescmac_busy"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aescmac_memfull</spirit:name>
+					<spirit:bitOffset>4</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aescmac_memfull"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+<!-- ************************ aesgmac_status ************************************************ -->
+			<spirit:register>
+				<spirit:name>aesgmac_status</spirit:name>
+				<spirit:addressOffset>0x0134</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>aesgmac_valid</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aesgmac_valid"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aesgmac_validout</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aesgmac_valid"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aesgmac_inaccept</spirit:name>
+					<spirit:bitOffset>2</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aesgmac_inaccept"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aesgmac_done</spirit:name>
+					<spirit:bitOffset>3</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aesgmac_done"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>aesgmac_busy</spirit:name>
+					<spirit:bitOffset>4</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="aesgmac_busy"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+<!-- ************************ roi_status ************************************************ -->
+			<spirit:register>
+				<spirit:name>roi_status</spirit:name>
+				<spirit:addressOffset>0x0138</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>roi_col_end</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="roi_col_end"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>roi_row_end</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="roi_row_end"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>roi_col_param_err</spirit:name>
+					<spirit:bitOffset>8</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="roi_col_param_err"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+<!-- ************************ spare_reg35 ************************************************ -->
+			<spirit:register>
+				<spirit:name>spare_reg35</spirit:name>
+				<spirit:addressOffset>0x013c</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>spare_reg35</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+							<cadence:hdlAccess cadence:path="u_vcore_apb_regs.spare_reg35"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+		</spirit:addressBlock>
+	</spirit:memoryMap>
+  </spirit:memoryMaps>
+</spirit:component>

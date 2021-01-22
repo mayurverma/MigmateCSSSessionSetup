@@ -1,0 +1,24 @@
+add_filter ("RUNNER_FAILURE_FILTER", 5,
+            '^TestRunner\s*\[WARNING\]\s*(Failed.*?)\n',
+            failure (1,"pyfwtest","runner_failure","critical",'$1')
+           );
+add_filter ("RUNNER_TRACEBACK_FILTER", 5,
+            '^TestRunner\s*\[WARNING\]\s*(Traceback[\s\S]*?(?=\n{2,}))',
+            failure (1,"pyfwtest","runner_traceback","critical",'$1')
+           );
+add_filter ("FIXTURE_ERROR_FILTER", 4,
+            '^LogTestReporter\s*\[INFO\]\s*(FIXTURE ERROR\s*:[\s\S]*?(?=\n{2,}))',
+            failure (1,"pyfwtest","fixture_error","critical",'$1')
+           );
+add_filter ("TEST_ERROR_FILTER", 3,
+            '^LogTestReporter\s*\[INFO\]\s*(TEST ERROR\s*:[\s\S]*?(?=\n{2,}))',
+            failure (1,"pyfwtest","test_error","critical",'$1')
+           );
+add_filter ("TEST_FAILURE_FILTER", 2,
+            '^LogTestReporter\s*\[INFO\]\s*(TEST FAILURE\s*:[\s\S]*?(?=\n{2,}))',
+            failure (1,"pyfwtest","test_failure","error",'$1')
+           );
+add_filter ("VERDICT_FILTER", 1,
+            '^LogTestReporter\s*\[INFO\]\s*(VERDICT\s*:\s*FAIL\s*\(.*\))',
+            failure (1,"pyfwtest","verdict","error",'$1')
+           );

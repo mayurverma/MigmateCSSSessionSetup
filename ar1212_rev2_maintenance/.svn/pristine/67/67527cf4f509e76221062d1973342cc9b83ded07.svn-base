@@ -1,0 +1,49 @@
+This folder contains bash scripts to semi-automate the process of running the 
+Python integration tests and collating the results. Scripts are provided for
+both the Simulator and the Virtual Prototype, in the 'sim' and 'model' 
+directories respectively.
+
+Each script executes a number of tests from a particular test group. The 
+groups are listed in the TestSchedule (in test/scripts/TestSchedule.xls).
+Note the scripts only execute the tests that were available when the AR0820
+rev2 RC1.1 ROM was released. Numerous tests have been added since then but
+the scripts have not been updated.
+
+Each script has a common header section that defines the following environment
+variables. These need to be configured to match the user's environment:
+
+ - CODE_UNDER_TEST: the directory containing the AR0820 firmware SVN checkout
+                    
+ - DUT:             (sim-only) the directory containing the Secure TB environment 
+                    SVN checkout
+                    
+ - MODEL_UNDER_TEST: (model-only) the directory containing the Virtual Prototype
+                     model_build SVN checkout
+
+ - TEST_RESULTS:    the directory to contain the test results. Typically this is
+                    an empty directory named as rcYYY_rZZZ, when YYY is the SVN
+                    revision of the firmware release candidate under test, and 
+                    ZZZ is the SVN revision of the CODE_UNDER_TEST checkout.
+                    
+Each script also defines the following environment variables:
+
+ - TEST_SCRIPT:     indicates the Python test script containing the test cases to
+                    be executed (e.g. test_get_sensor_id)
+ 
+ - TEST_CLASS:      indicates the Python test class (e.g. TestGetSensorId)
+  
+ - TEST_NAMES:      list of space-delimited tests to be executed, in the form 
+                    <otpm_image>:<test_name> (e.g. blank:test_get_sensor_id_in_cm).
+                    Each test must define which OTPM image it requires.
+
+                    The TEST_NAMES variable can be extended to cover the full 
+                    suite of tests within the test group (as and when necessary).
+
+The scripts can be run from any directory, but the recommendation is to run them 
+from your /sim/tmp/<username>/sim or /sim/tmp/<username>/model directories. The
+results will be collated into the test_results directory (or wherever the 
+TEST_RESULTS variable indicates).
+
+The script parses the results of each test. If it finds the word 'failure' or 
+'error' it aborts the script. Make sure none of your test cases contain these
+words!
