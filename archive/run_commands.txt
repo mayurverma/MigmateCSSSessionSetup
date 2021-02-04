@@ -1,0 +1,62 @@
+[CSV FOOTERS]
+Width = 4104
+Height = 3104
+Bpp = 14
+
+#For running mac_rx_mayur utility; pass argument -sc 1 and -L (live data) 1 or 1 for Test pattern pass -E (embedded data) 1 or 0
+
+python gmac_test.py -i 39638a9eb84aa1556ed4db24  -k d6d31aed630b2629c63522f87087b334 -f capture0002.tab -s 3102 -e 4 -d 16 -m 0 -p 14 -r 0x42 -l 1 -E 1 -sc 1
+
+
+./mac_rx_mayur -d 16 -m 0 -p 14 -r 0x42 -e 4 -k d6d31aed630b2629c63522f87087b334 -i 39638a9eb84aa1556ed4db24 -f capture0002.tab -s 3102 -v -L 1
+
+
+mode                : SessionMode.EPHEMERAL_MODE
+video   key         : 500755cc7ebc03bef528ccb4aa122941
+control key         : 04d7b06802fc2a6004dd0dceae461a42
+nonce               : 279f8ef885d8c6a8bc7541cc
+video_auth_gmac_iv  : d6c75df942a77ff2bb3e3e51
+
+
+python gmac_test.py -i d6c75df942a77ff2bb3e3e51  -k 500755cc7ebc03bef528ccb4aa122941 -f One.txt -s 3102 -e 4 -d 16 -m 0 -p 14 -r 0x42 -l 1
+
+
+
+mode                : SessionMode.EPHEMERAL_MODE
+video   key         : 0e28069d9ca84d7912fddc860408914e
+control key         : 870662d99fc56ecf80169fda0a99f055
+nonce               : e98516b4fba4cad87054eab7
+video_auth_gmac_iv  : 8475f40aa86e3f62a3dc07b4
+
+python gmac_test.py -i d6c75df942a77ff2bb3e3e51 -k 500755cc7ebc03bef528ccb4aa122941 -f One.txt -s 3102 -e 4 -d 16 -m 0 -p 14 -r 0x42 -l 1
+
+16-16:
+mode                : SessionMode.EPHEMERAL_MODE
+video   key         : c7c8566c5885f4d1e4530a3fbd27bcde
+control key         : 67ec03c4f4843e2308268f9b4b6b7473
+nonce               : 6b8d66cc898ac65ef7afbe66
+video_auth_gmac_iv  : b0bffb665335b39e9f8589c2
+
+python gmac_test.py -i b0bffb665335b39e9f8589c2 -k c7c8566c5885f4d1e4530a3fbd27bcde -f 1.txt -s 3102 -e 4 -d 16 -m 0 -p 16 -r 0x42 -l 1
+
+
+Session established - session params:
+	Host salt:             MSB->LSB:    fea2df48c332201926b53589148d6846
+	Sensor salt:           MSB->LSB:    0f27a0f984bb7436d142ee058f8626ac
+	Video auth GMAC IV:    MSB->LSB:    e3d7c4f190dd039b9597fcc7
+	Control channel nonce: MSB->LSB:    19a79fd46927e6306dc40250
+	Video auth key:        MSB->LSB:    bb34298777da6d17408db01603d2fece
+	Control channel key:   MSB->LSB:    e2c5a3f9adfda7d5064f67d9afad4a0a
+	
+python gmac_test.py -i e3d7c4f190dd039b9597fcc7 -k bb34298777da6d17408db01603d2fece -f capture0003.tab -s 3102 -e 4 -d 16 -m 0 -p 14 -r 0x42 -l 1 -sc 1 -L 1
+
+Session established - session params:
+	Host salt:             MSB->LSB:    32aedf1a76a1218881eeaa995f329e8b
+	Sensor salt:           MSB->LSB:    f09ce1378af7090a8c03fc00aa6fae2e
+	Video auth GMAC IV:    MSB->LSB:    49c902d30f9bbb2563ad311b
+	Control channel nonce: MSB->LSB:    4d0c6ec48b6f88bd70f5e193
+	Video auth key:        MSB->LSB:    9f40beb673cdd0d2ef3a7e8a43d6d9af
+	Control channel key:   MSB->LSB:    74d47454c600c5ddd0c9ce6e2ba91969
+	
+python gmac_test.py -i 49c902d30f9bbb2563ad311b -k 9f40beb673cdd0d2ef3a7e8a43d6d9af -f capture0005.tab -s 3102 -e 4 -d 16 -m 0 -p 14 -r 0x42 -l 1 -sc 1 -L 1
+

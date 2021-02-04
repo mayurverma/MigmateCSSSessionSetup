@@ -1,3 +1,0 @@
-Address |      Mask         |    Notes
------------------------------------------
-  0x33  | 0x82020 c 00000    | Code of 0x208083 for upper 16-bits decodes as 0 with one soft error. This location is written with code 0x200484 (value=0x41), value in OTPM is now 0x208487 data value 0x2041 with one error
