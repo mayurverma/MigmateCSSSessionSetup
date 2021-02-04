@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+				xmlns:cadence="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions/cadenceSpiritVendorExtensions.xsd http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.accellera.org/images/xmlschema/spirit/1685-2009/index.xsd"><!--http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd"-->
+  <spirit:vendor>spiritconsortium.org</spirit:vendor>
+  <spirit:library>uvm_reg_ex</spirit:library>
+  <spirit:name>u_cyber_otpm</spirit:name>
+  <spirit:version>1685-2009</spirit:version>
+  <spirit:memoryMaps>
+	<spirit:memoryMap>
+	<spirit:name>otpm_map</spirit:name>
+		<spirit:addressBlock>
+			<spirit:name>crypto_otpm</spirit:name>
+			<spirit:baseAddress>0x0000</spirit:baseAddress>
+			<spirit:range>0x0037</spirit:range>
+			<spirit:width>32</spirit:width>
+
+<!-- ************************ control ************************************************ -->
+			<spirit:register>
+				<spirit:name>control</spirit:name>
+				<spirit:addressOffset>0x0000</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>lock_sector</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>2</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_otpm_apb_regs.otpm_control_lock_sector_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>lock_all</spirit:name>
+					<spirit:bitOffset>2</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_otpm_apb_regs.otpm_control_lock_all_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>en_standby</spirit:name>
+					<spirit:bitOffset>3</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_otpm_apb_regs.otpm_control_en_standby_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>usr_powerdown</spirit:name>
+					<spirit:bitOffset>4</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_otpm_apb_regs.otpm_control_usr_powerdown_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>ignore_ecc_err_lower</spirit:name>
+					<spirit:bitOffset>5</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_otpm_apb_regs.otpm_control_ignore_ecc_error_lower_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>dis_pslverr</spirit:name>
+					<spirit:bitOffset>6</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_otpm_apb_regs.otpm_control_dis_pslverr_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_mr ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_mr</spirit:name>
+				<spirit:addressOffset>0x0004</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>pgm_soak</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mr_pgm_soak_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>pgm</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mr_pgm_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_mr_mra ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_mr_mra</spirit:name>
+				<spirit:addressOffset>0x0008</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>read</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mr_mra_read_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>pgm</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mr_mra_pgm_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_mra ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_mra</spirit:name>
+				<spirit:addressOffset>0x000C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>pgm_soak</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mra_pgm_soak_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>read</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mra_read_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_mrb ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_mrb</spirit:name>
+				<spirit:addressOffset>0x0010</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>pgm</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mrb_pgm_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>pgm_soak</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mrb_pgm_soak_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_mrb_tds ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_mrb_tds</spirit:name>
+				<spirit:addressOffset>0x0014</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>mrb_read</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_mrb_read_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>tds</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tds_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_prog_time ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_prog_time</spirit:name>
+				<spirit:addressOffset>0x0018</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>tpas</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tpas_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>tpp</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tpp_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_recovery ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_recovery</spirit:name>
+				<spirit:addressOffset>0x001C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>tpr</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tpr_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>tpsr</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tpsr_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_soak_cycles ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_soak_cycles</spirit:name>
+				<spirit:addressOffset>0x0020</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>tspp</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tspp_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_program ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_program</spirit:name>
+				<spirit:addressOffset>0x0024</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>tvpps</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tvpps_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>soak_count_max</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>4</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_soak_count_max_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_write_time ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_write_time</spirit:name>
+				<spirit:addressOffset>0x0028</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>twr</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_twr_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>twp</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_twp_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_read_time ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_read_time</spirit:name>
+				<spirit:addressOffset>0x002C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>tras</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_tras_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>trr</spirit:name>
+					<spirit:bitOffset>16</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_trr_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_read_error ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_read_error</spirit:name>
+				<spirit:addressOffset>0x0030</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>16</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_read_error_addr_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ core_ecc_flags ************************************************ -->
+			<spirit:register>
+				<spirit:name>core_ecc_flags</spirit:name>
+				<spirit:addressOffset>0x0034</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>sec</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_ecc_sec_flag_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+				<spirit:field>
+					<spirit:name>ded</spirit:name>
+					<spirit:bitOffset>1</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="otpm_core_ecc_ded_flag_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+		</spirit:addressBlock>
+	</spirit:memoryMap>
+  </spirit:memoryMaps>
+</spirit:component>
+

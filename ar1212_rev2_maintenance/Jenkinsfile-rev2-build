@@ -1,0 +1,258 @@
+#!/bin/env groovy
+
+/* Build pipepline for AR1212 REV2 Maintenance Firmware */
+pipeline {
+    environment {
+        MAILTO_DEVELOPERS = 'mayur.verma@onsemi.com, ashutosh.gupta@onsemi.com'
+        SVN_URL = "http://sjca-svn01.aptina.com/svn/MIG/SE/AR0820_firmware/branches/ar1212_rev2_maintenance"
+    }
+    agent {
+        node {
+            label 'linux'
+            customWorkspace "/proj_aptina/bidc_firmware/${JOB_NAME}"
+        }
+    }
+    stages {
+        stage('Build') {
+            steps {
+                task 'Update workspace'
+                script {
+                    BUILD_SVN_REVISION = checkout([$class: 'SubversionSCM',
+                        additionalCredentials: [[credentialsId: '73761ed1-b33c-42ae-b607-5b651007165f',
+                                                 realm: '<http://sjca-svn01.aptina.com:80> Subversion Repository']],
+                        excludedCommitMessages: '',
+                        excludedRegions: '',
+                        excludedRevprop: '',
+                        excludedUsers: '',
+                        filterChangelog: false,
+                        ignoreDirPropChanges: false,
+                        includedRegions: '',
+                        locations: [[cancelProcessOnExternalsFail: true,
+                                     credentialsId: '73761ed1-b33c-42ae-b607-5b651007165f',
+                                     depthOption: 'infinity',
+                                     ignoreExternalsOption: false,
+                                     local: '.',
+                                     remote: "${SVN_URL}@${SVN_URL_REVISION}"]],
+                        quietOperation: false,
+                        workspaceUpdater: [$class: 'UpdateUpdater']]).SVN_REVISION
+                    echo "BUILD_SVN_REVISION = ${BUILD_SVN_REVISION}"
+                    env.BUILD_SVN_REVISION = "${BUILD_SVN_REVISION}"
+                    currentBuild.displayName = "#${BUILD_NUMBER}-r${BUILD_SVN_REVISION}"
+					echo "currentBuild.displayName = ${currentBuild.displayName}"
+                }
+                echo "PATH = ${PWD}"
+                echo "BUILD_NUMBER = ${BUILD_NUMBER}"
+                echo "BUILD_SVN_REVISION = ${BUILD_SVN_REVISION}"
+				
+                task 'Clean workspace'
+                sh '''
+                    set +ex
+                    # Setup BAIN CAD/ CDE & LSF   
+                    . /site/custom/envsys/dotfiles/bashrc.site
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    make -r BUILD_CONFIG=barebones_armcc bare
+                '''
+                
+                task 'Unpack ROM'
+                sh '''
+                    set +ex
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    make -r -C src/Rom BUILD_CONFIG=barebones_armcc clean dist_unpack
+                '''
+                
+                task 'Build Patch'
+                sh '''
+                    set +ex
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    #bsub -Is make -r -C src/Patch BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                    make -r -C src/Patch BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                '''
+                archiveArtifacts artifacts: 'src/Patch/output/asic.armcc/AR1212_REV2_Patch_*.zip*', fingerprint: true, onlyIfSuccessful: true
+                
+                task 'Build DepuApp'
+                sh '''
+                    set +ex
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    #bsub -Is make -r -C src/DepuApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                    make -r -C src/DepuApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                '''
+                archiveArtifacts artifacts: 'src/DepuApp/output/asic.armcc/AR1212_REV2_DepuApp_*.zip*', fingerprint: true, onlyIfSuccessful: true
+                
+                /*task 'Build ProdTestApp'
+                sh '''
+                    set +ex
+                    #source /tools/icad/MICE/etc/.bashrc_ukcad
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    bsub -Is make -r -C src/ProdTestApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                    #make -r -C src/ProdTestApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                '''
+                archiveArtifacts artifacts: 'src/ProdTestApp/output/asic.armcc/AR1212_REV2_ProdTestApp_*.zip*', fingerprint: true, onlyIfSuccessful: true
+                
+                task 'Build SdpuApp'
+                sh '''
+                    set +ex
+                    #source /tools/icad/MICE/etc/.bashrc_ukcad
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    bsub -Is make -r -C src/SdpuApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                    #make -r -C src/SdpuApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                '''
+                archiveArtifacts artifacts: 'src/SdpuApp/output/asic.armcc/AR1212_REV2_SdpuApp_*.zip*', fingerprint: true, onlyIfSuccessful: true
+                
+                task 'Build TrngApp'
+                sh '''
+                    set +ex
+                    #source /tools/icad/MICE/etc/.bashrc_ukcad
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    bsub -Is make -r -C src/TrngApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                    #make -r -C src/TrngApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                '''
+                archiveArtifacts artifacts: 'src/TrngApp/output/asic.armcc/AR1212_REV2_TrngApp_*.zip*', fingerprint: true, onlyIfSuccessful: true
+                
+                task 'Build ValidationApp'
+                sh '''
+                    set +ex
+                    #source /tools/icad/MICE/etc/.bashrc_ukcad
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    bsub -Is make -r -C src/ValidationApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                    #make -r -C src/ValidationApp BUILD_CONFIG=barebones_armcc BUILD_TYPE=release BUILD_PATCH_MRCN=${BUILD_NUMBER} clean dist
+                '''
+                archiveArtifacts artifacts: 'src/ValidationApp/output/asic.armcc/AR1212_REV2_ValidationApp_*.zip*', fingerprint: true, onlyIfSuccessful: true
+                */
+                task 'Build documentation'
+                sh '''
+                    set +ex
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    make -r BUILD_CONFIG=barebones_armcc docs
+                '''               
+                publishHTML([allowMissing: false,
+                    alwaysLinkToLastBuild: false,
+                    keepAll: false,
+                    reportDir: 'output/doc/html',
+                    reportFiles: 'index.html',
+                    reportName: 'Doxygen',
+                    reportTitles: ''])   
+            }
+        }
+        
+        stage('Unit Test') {
+            agent {
+                label 'windows'
+            }
+            steps {
+                task 'Update workspace'
+                checkout changelog: false, poll: false, scm: [$class: 'SubversionSCM',
+                    additionalCredentials: [[credentialsId: '73761ed1-b33c-42ae-b607-5b651007165f',
+                                             realm: '<http://sjca-svn01.aptina.com:80> Subversion Repository']],
+                    excludedCommitMessages: '',
+                    excludedRegions: '',
+                    excludedRevprop: '',
+                    excludedUsers: '',
+                    filterChangelog: false,
+                    ignoreDirPropChanges: false,
+                    includedRegions: '',
+                    locations: [[cancelProcessOnExternalsFail: true,
+                                 credentialsId: '73761ed1-b33c-42ae-b607-5b651007165f',
+                                 depthOption: 'infinity',
+                                 ignoreExternalsOption: false,
+                                 local: '.',
+                                 remote: "${SVN_URL}@${BUILD_SVN_REVISION}"]],
+                    quietOperation: false,
+                    workspaceUpdater: [$class: 'UpdateUpdater']]
+                
+                task 'Run Unit Tests'
+                bat '''
+                    call setenv.bat
+                    echo "PATH = %PATH%"
+                    set "PATH=C:\\MinGW\\bin;%PATH%"
+                    make -r BUILD_CONFIG=cpputest_mingw32 BUILD_IGNORE_UNIT_TEST_ERRORS=1 bare unittest unittest-report
+                '''
+                archiveArtifacts artifacts: 'output/pc.mingw32/*.html', onlyIfSuccessful: true
+                cobertura sourceEncoding: 'ASCII', zoomCoverageChart: false, maxNumberOfBuilds: 100,
+                    onlyStable: false, autoUpdateHealth: false, autoUpdateStability: false,
+                    coberturaReportFile: 'output/pc.mingw32/unittest_report.xml',
+                    failUnhealthy: false, failUnstable: false,
+                    conditionalCoverageTargets: '70, 0, 0',
+                    lineCoverageTargets: '80, 0, 0',
+                    methodCoverageTargets: '80, 0, 0'
+            }
+            post {
+                always {
+                    step([$class: 'JUnitResultArchiver', testResults: 'output/pc.mingw32/cpputest_*.xml'])
+                }
+            }
+        }
+        
+        stage('Analysis') {
+            steps {
+                task 'Check Code Style'
+                sh '''
+                    set +ex
+                    source /custom/tools/wrappers/bin/.cde_functions
+                    init_cde -silent
+                    set -ex
+                    make -r BUILD_CONFIG=barebones_armcc BUILD_IGNORE_STYLE_VIOLATIONS=1 check-style
+                '''
+                
+                task 'Scan For Issues'
+                recordIssues qualityGates: [[threshold: 1, type: 'TOTAL_ERROR', unstable: true],
+                                            [threshold: 1, type: 'TOTAL_HIGH', unstable: true],
+                                            [threshold: 1, type: 'TOTAL_NORMAL', unstable: true],
+                                            [threshold: 4, type: 'TOTAL_LOW', unstable: true]],
+                    tools: [taskScanner(highTags: 'FIXME', includePattern: 'inc/*.h, src/**/inc/*.h, src/**/src/*.c', lowTags: 'TODO'),
+                            checkStyle(pattern: 'output/asic.armcc/style_check_report.xml', reportEncoding: 'UTF-8'),
+                            /*gcc(reportEncoding: 'UTF-8'),*/
+                            armCc(reportEncoding: 'UTF-8')]
+                            
+                recordIssues qualityGates: [[threshold: 1, type: 'TOTAL_ERROR', unstable: true],
+                                            [threshold: 1, type: 'TOTAL_HIGH', unstable: true],
+                                            [threshold: 4, type: 'TOTAL_NORMAL', unstable: true],
+                                            [threshold: 4, type: 'TOTAL_LOW', unstable: true]],
+                    tools: [gcc(reportEncoding: 'UTF-8')]
+            }
+        }
+    }
+    post {
+        fixed {
+            emailext mimeType: 'text/html',
+                from: 'bnuk.jenkins@onsemi.com',
+                replyTo: 'noreply@onsemi.com',
+                to: "${MAILTO_DEVELOPERS}",
+                subject: "Job AR1212 ${JOB_BASE_NAME} SUCCESS",
+                body: '''${SCRIPT, template="groovy-html.template"}'''
+        }
+        failure {
+            emailext mimeType: 'text/html',
+                from: 'bnuk.jenkins@onsemi.com',
+                replyTo: 'noreply@onsemi.com',
+                to: "${MAILTO_DEVELOPERS}",
+                subject: "Job AR1212 ${JOB_BASE_NAME} FAILURE (build is broken)",
+                body: '''${SCRIPT, template="groovy-html.template"}'''
+        }
+        unstable {
+            emailext mimeType: 'text/html',
+                from: 'bnuk.jenkins@onsemi.com',
+                replyTo: 'noreply@onsemi.com',
+                to: "${MAILTO_DEVELOPERS}",
+                subject: "Job AR1212 ${JOB_BASE_NAME} UNSTABLE (unit tests or quality checks failed)",
+                body: '''${SCRIPT, template="groovy-html.template"}'''
+       }
+    }
+}

@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+				xmlns:cadence="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions http://www.cadence.com/SPIRIT/1685-2009/vendorExtensions/cadenceSpiritVendorExtensions.xsd http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009 http://www.accellera.org/images/xmlschema/spirit/1685-2009/index.xsd"><!--http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009/index.xsd"-->
+  <spirit:vendor>spiritconsortium.org</spirit:vendor>
+  <spirit:library>uvm_reg_ex</spirit:library>
+  <spirit:name>u_patcher_registers</spirit:name>
+  <spirit:version>1685-2009</spirit:version>
+  <spirit:memoryMaps>
+	<spirit:memoryMap>
+	<spirit:name>patcher_registers_map</spirit:name>
+		<spirit:addressBlock>
+			<spirit:name>patcher</spirit:name>
+			<spirit:baseAddress>0x0000</spirit:baseAddress>
+			<spirit:range>0x008B</spirit:range>
+			<spirit:width>32</spirit:width>
+
+<!-- ************************ comparator_00 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_00</spirit:name>
+				<spirit:addressOffset>0x0000</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_00_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_01 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_01</spirit:name>
+				<spirit:addressOffset>0x0004</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_01_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_02 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_02</spirit:name>
+				<spirit:addressOffset>0x0008</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_02_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_03 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_03</spirit:name>
+				<spirit:addressOffset>0x000C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_03_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_04 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_04</spirit:name>
+				<spirit:addressOffset>0x0010</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_04_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_05 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_05</spirit:name>
+				<spirit:addressOffset>0x0014</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_05_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_06 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_06</spirit:name>
+				<spirit:addressOffset>0x0018</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_06_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_07 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_07</spirit:name>
+				<spirit:addressOffset>0x001C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_07_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_08 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_08</spirit:name>
+				<spirit:addressOffset>0x0020</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_08_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_09 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_09</spirit:name>
+				<spirit:addressOffset>0x0024</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_09_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_10 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_10</spirit:name>
+				<spirit:addressOffset>0x0028</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_10_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_11 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_11</spirit:name>
+				<spirit:addressOffset>0x002C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_11_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_12 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_12</spirit:name>
+				<spirit:addressOffset>0x0030</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_12_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_13 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_13</spirit:name>
+				<spirit:addressOffset>0x0034</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_13_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_14 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_14</spirit:name>
+				<spirit:addressOffset>0x0038</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_14_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_15 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_15</spirit:name>
+				<spirit:addressOffset>0x003C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_15_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_16 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_16</spirit:name>
+				<spirit:addressOffset>0x0040</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_16_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_17 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_17</spirit:name>
+				<spirit:addressOffset>0x0044</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_17_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_18 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_18</spirit:name>
+				<spirit:addressOffset>0x0048</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_18_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_19 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_19</spirit:name>
+				<spirit:addressOffset>0x004C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_19_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_20 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_20</spirit:name>
+				<spirit:addressOffset>0x0050</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_20_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_21 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_21</spirit:name>
+				<spirit:addressOffset>0x0054</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_21_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_22 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_22</spirit:name>
+				<spirit:addressOffset>0x0058</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_22_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_23 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_23</spirit:name>
+				<spirit:addressOffset>0x005C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_23_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_24 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_24</spirit:name>
+				<spirit:addressOffset>0x0060</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_24_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_25 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_25</spirit:name>
+				<spirit:addressOffset>0x0064</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_25_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_26 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_26</spirit:name>
+				<spirit:addressOffset>0x0068</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_26_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_27 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_27</spirit:name>
+				<spirit:addressOffset>0x006C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_27_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_28 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_28</spirit:name>
+				<spirit:addressOffset>0x0070</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_28_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_29 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_29</spirit:name>
+				<spirit:addressOffset>0x0074</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_29_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_30 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_30</spirit:name>
+				<spirit:addressOffset>0x0078</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_30_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ comparator_31 ************************************************ -->
+			<spirit:register>
+				<spirit:name>comparator_31</spirit:name>
+				<spirit:addressOffset>0x007C</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>address</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_comparator_31_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ enable ************************************************ -->
+			<spirit:register>
+				<spirit:name>enable</spirit:name>
+				<spirit:addressOffset>0x0080</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>bitmask</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>32</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_enable_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ index ************************************************ -->
+			<spirit:register>
+				<spirit:name>index</spirit:name>
+				<spirit:addressOffset>0x0084</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-only</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>index</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>5</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_index_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+
+<!-- ************************ control ************************************************ -->
+			<spirit:register>
+				<spirit:name>control</spirit:name>
+				<spirit:addressOffset>0x0088</spirit:addressOffset>
+				<spirit:size>32</spirit:size>
+				<spirit:access>read-write</spirit:access>
+				<spirit:reset>
+					<spirit:value>0x00000000</spirit:value>
+					 <spirit:mask>0xffffffff</spirit:mask>
+				</spirit:reset>
+				<spirit:field>
+					<spirit:name>access_type</spirit:name>
+					<spirit:bitOffset>0</spirit:bitOffset>
+					<spirit:bitWidth>1</spirit:bitWidth>
+					<spirit:vendorExtensions>
+						<cadence:extensions>
+<!--   FIXME!    CADENCE PATH DETAILS ARE BEST GUESS AND POSSIBLY NOT CORRECT -->
+							<cadence:hdlAccess cadence:path="u_apb_regs.patcher_access_type_reg"></cadence:hdlAccess>
+						</cadence:extensions>
+					</spirit:vendorExtensions>
+				</spirit:field>
+			</spirit:register>
+		</spirit:addressBlock>
+	</spirit:memoryMap>
+  </spirit:memoryMaps>
+</spirit:component>

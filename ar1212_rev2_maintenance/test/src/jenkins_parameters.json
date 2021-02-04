@@ -1,0 +1,21 @@
+{
+  "u_top0.u_code_rom0" : {                                                  
+      "code_file_in" : [                               
+        "./AR0820_NVIC_ROM_16384x39_0.rom.v",
+        "./AR0820_NVIC_ROM_16384x39_1.rom.v",
+        "./AR0820_NVIC_ROM_16384x39_2.rom.v",
+        "./AR0820_NVIC_ROM_16384x39_3.rom.v" 
+      ]
+  },
+  "u_top0.u_patcher0" : {
+    "enable_patching" : true
+  },
+  "u_top0.u_nvm_memory0" : {
+    "nvm_file_in" : [
+      "./AR0820_OTPM_1024x22_0.otpm.v",
+      "./AR0820_OTPM_1024x22_1.otpm.v",
+      "./AR0820_OTPM_1024x22_2.otpm.v",
+      "./AR0820_OTPM_1024x22_3.otpm.v"
+    ]
+  }
+}

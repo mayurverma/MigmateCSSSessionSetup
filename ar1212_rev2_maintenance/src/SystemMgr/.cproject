@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702" moduleId="org.eclipse.cdt.core.settings" name="CppUTest_ARMCC">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702" name="CppUTest_ARMCC" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.681954768" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.base.1807871601" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.PE" id="cdt.managedbuild.target.gnu.platform.mingw.base.1582578215" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.mingw.base"/>
+							<builder arguments="-r BUILD_CONFIG=cpputest_armcc" buildPath="${workspace_loc:/SystemMgr}/test" command="make" id="cdt.managedbuild.builder.gnu.cross.881717043" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.base.2145307417" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.base">
+								<option id="gnu.both.asm.option.include.paths.454181097" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.86042559" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.921835322" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1548955669" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base">
+								<option id="gnu.cpp.compiler.option.include.paths.1068387201" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.772522317" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1658544845" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.base">
+								<option id="gnu.c.compiler.option.include.paths.605819323" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1311341116" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.base.1027410392" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.819823966" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.636859478" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472" moduleId="org.eclipse.cdt.core.settings" name="CppUTest MinGW32">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472" name="CppUTest MinGW32" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.mingw.base.1155156102" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.PE" id="cdt.managedbuild.target.gnu.platform.mingw.base.1927135975" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.mingw.base"/>
+							<builder arguments="-r BUILD_CONFIG=cpputest_mingw32" buildPath="${workspace_loc:/SystemMgr}/test" command="make" id="cdt.managedbuild.builder.gnu.cross.1615565834" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder"/>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.mingw.base.174797699" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.base">
+								<option id="gnu.both.asm.option.include.paths.1583937711" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1803612378" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.1118203906" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1535239849" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base">
+								<option id="gnu.cpp.compiler.option.include.paths.2042466062" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1784032386" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1653586975" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.base">
+								<option id="gnu.c.compiler.option.include.paths.1392177674" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1821000407" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.base.943996766" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.1856585797" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1031085588" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1325591425">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1325591425" moduleId="org.eclipse.cdt.core.settings" name="CppUTest ARMCC Klocwork">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;com.arm.eclipse.builder.armcc.error" id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1325591425" name="CppUTest ARMCC Klocwork" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1325591425." name="/" resourcePath="">
+						<toolChain errorParsers="" id="cdt.managedbuild.toolchain.gnu.mingw.base.209055477" name="MinGW GCC" superClass="cdt.managedbuild.toolchain.gnu.mingw.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.PE" id="cdt.managedbuild.target.gnu.platform.mingw.base.1658988563" name="Debug Platform" osList="win32" superClass="cdt.managedbuild.target.gnu.platform.mingw.base"/>
+							<builder arguments="-o kwinject.out -I *.cpp make -r BUILD_CONFIG=cpputest_armcc" buildPath="${workspace_loc:/SystemMgr}/test" command="${KW_ECLIPSE_ENGINE}\kwinject" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator" id="cdt.managedbuild.target.gnu.builder.base.1638021351" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool errorParsers="" id="cdt.managedbuild.tool.gnu.assembler.mingw.base.493967997" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.mingw.base">
+								<option id="gnu.both.asm.option.include.paths.845753576" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.135876881" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.mingw.base.1002747489" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.mingw.base"/>
+							<tool errorParsers="" id="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.563181034" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base">
+								<option id="gnu.cpp.compiler.option.include.paths.396744363" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.520548145" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool errorParsers="" id="cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1984185137" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.mingw.base">
+								<option id="gnu.c.compiler.option.include.paths.775504327" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../test/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cmsis/core/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/cpputest/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../contrib/fff&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SystemDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CryptoMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../HealthMonitor/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../SessionMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../PatchMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandHandler/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../LifecycleMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../AssetMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../NVMMgr/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../CommandDrv/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Diag/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Init/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Interrupts/inc&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../Platform/inc&quot;"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1989391408" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.mingw.base.750822217" name="MinGW C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.mingw.base"/>
+							<tool errorParsers="" id="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base.2140368354" name="MinGW C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.mingw.base">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.587154597" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="SystemMgr.null.592587824" name="SystemMgr"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="CppUTest_ARMCC">
+			<resource resourceType="PROJECT" workspacePath="/SystemMgr"/>
+		</configuration>
+		<configuration configurationName="CppUTest ARMCC Klocwork">
+			<resource resourceType="PROJECT" workspacePath="/SystemMgr"/>
+		</configuration>
+		<configuration configurationName="CppUTest_GCC"/>
+		<configuration configurationName="CppUTest_Klokwork"/>
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/SystemMgr"/>
+		</configuration>
+		<configuration configurationName="CppUTest MinGW32"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+		<buildTargets>
+			<target name="Bare" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>../contrib/unxutils/usr/local/wbin/make</buildCommand>
+				<buildArguments>-r BUILD_CONFIG=cpputest_armcc</buildArguments>
+				<buildTarget>bare</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="Clean" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>../contrib/unxutils/usr/local/wbin/make</buildCommand>
+				<buildArguments>-r BUILD_CONFIG=cpputest_armcc</buildArguments>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="Docs" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>../contrib/unxutils/usr/local/wbin/make</buildCommand>
+				<buildArguments>-r BUILD_CONFIG=cpputest_armcc</buildArguments>
+				<buildTarget>docs</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+		</buildTargets>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.;cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1653586975;cdt.managedbuild.tool.gnu.c.compiler.input.1821000407">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.681954768;cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1658544845;cdt.managedbuild.tool.gnu.c.compiler.input.1311341116">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1049275011;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1049275011.;cdt.managedbuild.tool.gnu.c.compiler.mingw.base.983069497;cdt.managedbuild.tool.gnu.c.compiler.input.540330384">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.681954768;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1548955669;cdt.managedbuild.tool.gnu.cpp.compiler.input.772522317">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1535239849;cdt.managedbuild.tool.gnu.cpp.compiler.input.1784032386">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1049275011;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.1351595472.1049275011.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1114108703;cdt.managedbuild.tool.gnu.cpp.compiler.input.209793259">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.;cdt.managedbuild.tool.gnu.cpp.compiler.mingw.base.1029046767;cdt.managedbuild.tool.gnu.cpp.compiler.input.1455168275">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196;cdt.managedbuild.toolchain.gnu.mingw.base.1802367702.882650196.;cdt.managedbuild.tool.gnu.c.compiler.mingw.base.1478573022;cdt.managedbuild.tool.gnu.c.compiler.input.1314335121">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>
